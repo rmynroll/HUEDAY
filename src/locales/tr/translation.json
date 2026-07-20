@@ -1,0 +1,548 @@
+{
+  "common": {
+    "close": "Kapat",
+    "cancel": "Vazgeç",
+    "save": "Kaydet",
+    "saving": "Kaydediliyor...",
+    "apply": "Uygula ✨",
+    "applied": "Uygulandı ✓",
+    "applying": "Uygulanıyor…",
+    "delete": "Sil",
+    "send": "Gönder",
+    "sharing": "Hazırlanıyor…"
+  },
+  "nav": {
+    "today": "Bugün",
+    "calendar": "Takvim",
+    "journal": "Ajanda",
+    "moodCalendar": "Mod Takvimi",
+    "studio": "Stüdyo",
+    "album": "Albüm",
+    "chats": "Vibe Chat",
+    "dayCard": "Gün Kartı",
+    "settings": "Ayarlar",
+    "wrapped": "Aylık Özet"
+  },
+  "notFound": {
+    "title": "Oops!",
+    "message": "Bu ekran mevcut değil.",
+    "goHome": "Ana ekrana git!"
+  },
+  "today": {
+    "heading": "Bugün hangi renktesin?",
+    "subheading": "Aşağıdaki kaydırıcı ve etiketlerle ruh halini yansıt.",
+    "taskBridge": "📌 Bugün {{completed}}/{{total}} görev tamamladın ✨",
+    "modeDetailed": "Detaylı",
+    "modeQuick": "Hızlı giriş",
+    "quickPickHeading": "Rengini Seç",
+    "styleSectionTitle": "Kart Stili Seç",
+    "noteSectionTitle": "Günün Notu",
+    "notePlaceholder": "Tek satırlık bir his yaz... (isteğe bağlı)",
+    "musicSectionTitle": "🎵 Günün Şarkısı",
+    "songNamePlaceholder": "Şarkı Adı",
+    "artistPlaceholder": "Sanatçı",
+    "updatingButton": "Kartın Dokunuyor…",
+    "updateButton": "Kartımı Güncelle ✨",
+    "createButton": "Kartımı Oluştur ✨",
+    "upgradeModal": {
+      "title": "hueday+ ile sınırları kaldır 👑",
+      "subtitle": "Kendini renklerle ifade etmenin en estetik yolunu keşfet.",
+      "benefit1Title": "Tüm Kart Stilleri",
+      "benefit1Desc": "Y2K Krom, Sulu Boya ve Gece Neonu stillerine erişin.",
+      "benefit2Title": "Duvar Kağıdı Seti",
+      "benefit2Desc": "Günün kartından kilit ve ana ekran duvar kağıdı oluşturun.",
+      "benefit3Title": "Same Vibe Eşleşmesi",
+      "benefit3Desc": "Arkadaşlarınızla aynı gün benzer moodları yakalayın.",
+      "price": "Aylık sadece 29.99 TL",
+      "upgradeButton": "Hueday+ Sürümüne Yükselt",
+      "continueFree": "Ücretsiz Devam Et"
+    }
+  },
+  "calendar": {
+    "heading": "Renk Takvimi",
+    "wrappedButton": "✨ {{month}} Özetini Gör"
+  },
+  "moodCalendar": {
+    "heading": "Mod Takvimi",
+    "subheading": "Bir güne dokunarak renkli modunu işaretle.",
+    "monthSummaryTitle": "Ayın Rengin",
+    "noRecordYet": "Henüz kayıt yok",
+    "modalSubtitle": "Bugünkü rengini seç, uzun basarak yoğunluğunu ayarla.",
+    "close": "Kapat"
+  },
+  "studio": {
+    "heading": "Sanatçı Stüdyosu",
+    "subheading": "Tasarımcıların paylaştığı renk temalarını keşfet, tek dokunuşla bugünkü kartına uygula.",
+    "appliedHint": "✨ Bugünkü kartına uygulandı — \"Bugün\" ve \"Takvim\" sekmelerinde görebilirsin."
+  },
+  "album": {
+    "filters": {
+      "all": "Tümü 🌟",
+      "seasonal": "Mevsimlik 🍁",
+      "astronomical": "Gök Olayları 🌕",
+      "personal": "Kişisel 🎂",
+      "weather": "Hava Durumu ❄️"
+    },
+    "title": "Koleksiyon & Zaman 🏆",
+    "cardsSegment": "Kart Albümü 🖼️",
+    "capsulesSegment": "Zaman Kapsülleri ⌛",
+    "yearCollection": "{{year}} Yılı Koleksiyonu",
+    "rareCardsProgress": "{{earned}} / {{total}} nadir kart açıldı",
+    "emptyCategory": "Bu kategoride henüz kart veya gelecek olay yok.",
+    "upcomingEvent": "Gelecek Olay",
+    "capsuleEmptyTitle": "İlk Zaman Kapsülünü Mühürle",
+    "capsuleEmptyDesc": "Gün kartlarına özel düşüncelerini yazıp 1 yıl sonraya mühürle. Tam 365 gün sonra bugün açılacak törensel bir sürpriz yarat.",
+    "capsuleEmptyButton": "+ Bugünün Kartına Not Mühürle",
+    "pendingCapsules": "Bekleyen Kapsüller 🔒 ({{count}})",
+    "openingIn": "Açılışına {{days}} gün var ⌛",
+    "readyNow": "Şimdi Aç ✨",
+    "daysLeft": "{{days}} gün kaldı",
+    "openedChain": "Açılan Kapsüller Zinciri ⛓️",
+    "sealedAndOpened": "Mühürlendi & Açıldı ✨",
+    "replyCapsuleTag": "(Cevap Kapsülü)"
+  },
+  "chatsList": {
+    "heading": "Vibe Chat",
+    "subheading": "Arkadaşlarınla günlük renklerini ve vibelarını paylaş.",
+    "youPrefix": "Sen: ",
+    "noMessages": "Henüz mesaj yok. İlk mesajı gönder!"
+  },
+  "chat": {
+    "inputPlaceholder": "{{friend}} ile mesajlaş...",
+    "send": "Gönder"
+  },
+  "card": {
+    "sameVibeBanner": "💫 Deniz ile Aynı Vibe'dasınız! Eşleşmeyi Gör",
+    "shareStory": "Story Olarak Paylaş",
+    "wallpaperButton": "📱 Duvar Kağıdı Seti Oluştur",
+    "capsuleButton": "📜 Zaman Kapsülüne Mühürle",
+    "morningRitualBadge": "SABAH RİTÜELİ 🔮",
+    "editRitual": "Düzenle ✍️",
+    "sealedUntilMonthEnd": "🔒 Ay sonuna mühürlendi",
+    "addRitualButton": "+ Taş Seç & Güne Başla 🔮",
+    "emptyFutureTitle": "Gelecek Bir Gün",
+    "emptyPastTitle": "Henüz Renk Yok",
+    "emptyFutureDesc": "Günün rengi geldiğinde oluşacak. Şimdi bu güne ajanda görevlerini ve notlarını planlayabilirsin.",
+    "emptyPastDesc": "Bugün için henüz mood kaydı oluşturmadın. İstediğin zaman ana sayfaya dönüp rengini oluşturabilirsin.",
+    "createTodayButton": "+ Bugünkü Renk Kartını Oluştur",
+    "memoriesTitle": "✨ Günün Anıları",
+    "memoryPlaceholder": "Bir anı bırak...",
+    "wordOfDayLabel": "💬 Günün Kelimesi",
+    "wordOfDayPlaceholder": "Bir kelime (maks. 20)",
+    "agendaTitle": "📌 Günlük Ajanda",
+    "agendaStats": "{{completed}} / {{total}} tamamlandı",
+    "taskPlaceholder": "Yeni görev ekle...",
+    "timePlaceholder": "Saat (14:30)",
+    "addButton": "Ekle",
+    "emptyAgenda": "Bu gün için henüz görev eklenmedi. Küçük bir adım at!",
+    "carryToTomorrow": "↪ Yarına Taşı",
+    "noteAreaTitle": "📝 Günlük Ajanda Notu",
+    "noteAreaPlaceholder": "Bu güne dair yapılacaklar, düşünceler veya özel ajanda notun...",
+    "wallpaperModal": {
+      "addQuoteTitle": "Motive Edici Söz Ekle",
+      "noQuote": "Sözsüz",
+      "customQuotePlaceholder": "Veya kendi özel sözünü yaz...",
+      "toneTitle": "Renk Tonu Ön Ayarı",
+      "downloadButton": "Duvar Kağıdını İndir / Paylaş",
+      "savingButton": "Kaydediliyor…",
+      "closeButton": "Kapat",
+      "brand": "HUEDAY WALLPAPER"
+    },
+    "wallpaperUpgradeModal": {
+      "title": "Duvar Kağıdı Setini Kilitle",
+      "subtitle": "Günün renk tonlarından türetilmiş yüksek çözünürlüklü kilit ekranı duvar kağıdı seti oluştur.",
+      "tryButton": "Hueday+ 'ı Ücretsiz Dene",
+      "cancelButton": "Vazgeç"
+    },
+    "motivationalQuotes": [
+      "Işığın en karanlık anda bile seninle.",
+      "Bugünün ritmini sen belirlersin.",
+      "Her gün yeni bir tuvaldir.",
+      "Potansiyelin renklerin kadar sonsuz.",
+      "Sessizlikte kendi rengini bulursun.",
+      "Küçük adımlar, büyük dönüşümler."
+    ],
+    "tonePresets": {
+      "original": "Orijinal",
+      "golden": "Altın Saat 🌅",
+      "midnight": "Gece Sisi 🌌",
+      "pastel": "Pastel Düş 🌸",
+      "vibrant": "Canlı Neon ⚡"
+    }
+  },
+  "wrapped": {
+    "title": "hueday wrapped",
+    "subtitle": "Renklerle dokunmuş hikayen.",
+    "dominantPaletteTitle": "Baskın Renk Paletin",
+    "mostProductiveDay": "⚡ En Üretken Günün",
+    "taskCountAndColor": "{{date}}, {{count}} görev — rengi şuydu",
+    "moodWaveTitle": "Duygu Dalgaların",
+    "notEnoughDataForWave": "Dalga çizimi için en az 2 gün kaydedilmelidir.",
+    "recordedDays": "Kayıtlı Gün",
+    "recordedDaysValue": "{{count}} gün",
+    "weightedMood": "Ağırlıklı Mood",
+    "overallEnergy": "Genel Enerji",
+    "shareButton": "Özeti Story Olarak Paylaş",
+    "sharingLabel": "Hazırlanıyor…",
+    "closeButton": "Kapat",
+    "emptyMonthText": "Bu ay için henüz kayıtlı bir gün kartı yok.",
+    "backButton": "Geri Dön",
+    "moodWords": {
+      "calm": "Dingin & Sakin",
+      "balanced": "Dengeli & Stabil",
+      "vibrant": "Canlı & Parlak"
+    }
+  },
+  "settings": {
+    "premiumMemberTitle": "hueday+ üyesi 👑",
+    "premiumUpgradeTitle": "hueday+ sürümüne geç",
+    "premiumMemberDesc": "Premium özelliklerin keyfini çıkarın! Tüm kart stilleri, Duvar Kağıdı Seti ve daha fazlası açık.",
+    "premiumUpgradeDesc": "Tüm kart stillerini (Y2K Krom, Sulu Boya, Neon), Duvar Kağıdı Setini, Widget ve Hue Blend özelliklerini açın.",
+    "tryButton": "Hueday+'ı Dene",
+    "notificationsSection": "Bildirimler",
+    "dailyReminderTitle": "Günlük Akşam Hatırlatıcısı",
+    "dailyReminderDesc": "Saat 21:00'de günün rengini sorar.",
+    "dataSection": "Veri ve Gizlilik",
+    "resetAllButton": "Tüm Verileri Sıfırla",
+    "appName": "hueday",
+    "appVersion": "Sürüm 1.0.0 (v57.0.0)",
+    "appQuote": "\"Her günün bir rengi var.\"",
+    "resetModal": {
+      "title": "Verileri Sıfırla ⚠️",
+      "warning": "Tüm geçmiş gün kartlarınız silinecektir. Bu işlem geri alınamaz. Emin misiniz?",
+      "cancel": "İptal",
+      "confirm": "Evet, Sıfırla"
+    },
+    "languageSection": "Dil"
+  },
+  "moodSelector": {
+    "energyTitle": "Enerji",
+    "sleepTitle": "Uyku",
+    "socialityTitle": "Sosyallik",
+    "energyMin": "kor uykuda",
+    "energyMax": "alev alev",
+    "sleepMin": "sisli",
+    "sleepMax": "berrak",
+    "socialMin": "kendi halinde",
+    "socialMax": "herkesle",
+    "livePreviewLabel": "Bugünün paleti — canlı önizleme",
+    "energyStatus": {
+      "idle": "Rölantide",
+      "calm": "Sakin",
+      "balanced": "Dengede",
+      "flowing": "Akışta",
+      "blazing": "Alev Alev"
+    },
+    "sleepStatus": {
+      "foggy": "Sisli",
+      "resting": "Dinleniyor",
+      "balanced": "Dengede",
+      "clear": "Berrak",
+      "peak": "Zirvede"
+    },
+    "socialStatus": {
+      "ownWorld": "Kendi Halinde",
+      "introverted": "İçe Dönük",
+      "selective": "Seçici",
+      "sharing": "Paylaşımcı",
+      "everyone": "Herkesle"
+    }
+  },
+  "openingCeremony": {
+    "yearLaterBadge": "1 YIL SONRA BUGÜN ⌛",
+    "noteFromLastYear": "Geçen Yıl Bugünden Sana Not Var",
+    "sealedOnDate": "{{date}} tarihinde mühürlendi.",
+    "tapToCrack": "Mührü çatlatmak için dokun 💥",
+    "capsuleNoteBadge": "KAPSÜL NOTUN 📜",
+    "saidLastYear": "1 Yıl Önce Kendine Dedin ki:",
+    "seeColorComparison": "Renklerin Karşılaştırmasını Gör 🎨",
+    "colorsBadge": "RENKLERİN KARŞILAŞTIRMASI 🎨",
+    "oneYearAgoToday": "Bir Yıl Önce / Bugün",
+    "todayLabel": "Bugün",
+    "notChosenYet": "Bugünün rengini henüz seçmedin 🌱",
+    "writeReplyButton": "Geçen Yılki Sana Cevap Yaz 📝",
+    "timeLoopBadge": "ZAMAN DÖNGÜSÜ 🔄",
+    "whatToSayToLastYear": "Geçen Yılki Sana Ne Söylemek İstersin?",
+    "replyBecomesCapsule": "Cevabın yeni bir zaman kapsülü olarak gelecek yıla mühürlenecektir.",
+    "replyPlaceholder": "Gelecek yılki sana veya geçen yılki sana bir cevap yaz...",
+    "sealReplyButton": "Cevabı Mühürle & Tamamla 🔒",
+    "skipButton": "Atla & Tamamla ✨"
+  },
+  "crystal": {
+    "morningRitualBadge": "GÜNE BAŞLA — SABAH RİTÜELİ 🔮",
+    "chooseStoneTitle": "Taşını Seç ve Niyetini Koy",
+    "suggestedAffirmations": "Önerilen Olumlamalar",
+    "orWriteOwn": "Veya Kendi Niyetini Yaz",
+    "intentPlaceholder": "Bugün neye niyet ediyorsun?",
+    "sealMonthTitle": "Ay Sonuna Mühürle 🔒",
+    "sealMonthDesc": "Niyetin ay sonuna kadar saklanır, kapanışta gösterilir.",
+    "saving": "Kaydediliyor...",
+    "saveButton": "Taşı & Niyeti Kaydet ✨"
+  },
+  "audioMemo": {
+    "label": "🎙️ Sesli Anı",
+    "recordLabel": "Sesli anı bırak",
+    "stopLabel": "Kaydet",
+    "maxDuration": "Maks. 5 dakika",
+    "stopRecordingA11y": "Kaydı durdur",
+    "startRecordingA11y": "Ses kaydı başlat",
+    "pauseA11y": "Sesi durdur",
+    "playA11y": "Sesi dinle",
+    "deleteA11y": "Sesli anıyı sil"
+  },
+  "sealingRitual": {
+    "badge": "ZAMAN KAPSÜLÜ MÜHÜRLEME",
+    "title": "Geçen Yılki / Gelecekteki Sana Not 📜",
+    "warning": "⚠️ Bu not bir yıl boyunca kimse tarafından okunamayacak — sen dahil. Tam 365 gün sonra bugün açılacak.",
+    "notePlaceholder": "1 yıl sonraki sana ne söylemek istersin? Düşüncelerini, hislerini ve umutlarını yaz...",
+    "sealButton": "Mühürle 🔒",
+    "cancelButton": "Vazgeç",
+    "freezing": "Mühür Balmumu Donuyor..."
+  },
+  "polaroid": {
+    "label": "📸 Anı Fotoğrafları",
+    "addPhotoA11y": "Fotoğraf ekle",
+    "addPhotoLabel": "Fotoğraf Ekle",
+    "captionPlaceholder": "Bir anı notu bırak...",
+    "addNotePlaceholder": "✍️ Not ekle..."
+  },
+  "tagPicker": {
+    "low": "Az",
+    "mid": "Orta",
+    "high": "Çok"
+  },
+  "moodSlider": {
+    "low": "Düşük",
+    "high": "Yüksek"
+  },
+  "colorMoodPicker": {
+    "hint": "Dokun: seç/kaldır · Basılı tut: yoğunluğu değiştir"
+  },
+  "weekdays": ["Pt", "Sa", "Ça", "Pe", "Cu", "Ct", "Pz"],
+  "hueMotor": {
+    "low": ["Bugün yavaşladın.", "Sessiz bir gündü.", "İçine döndüğün bir gün.", "Kendine nazik davran."],
+    "mid": ["Dengede bir gün.", "Sakin ve istikrarlı.", "Ortada bir yerdeydin.", "Alışıldık bir ritim."],
+    "high": ["Bugün parlaktın.", "Enerjin yüksekti.", "Işıltılı bir gündü.", "Kendini bulduğun bir gün."]
+  },
+  "dimensions": {
+    "flowingNoon": "Akışkan Öğle",
+    "blazingJoy": "Alev Alev Neşe",
+    "highFrequency": "Yüksek Frekans",
+    "clearRetreat": "Berrak İnziva",
+    "balancedAndClear": "Dengede ve Berrak",
+    "foggyFocus": "Sisli Odak",
+    "idleCalm": "Rölantide Sakinlik",
+    "openCircle": "Açık Çember",
+    "ownUniverse": "Kendi Evreninde",
+    "calmBalance": "Sakin Denge"
+  },
+  "colorMood": {
+    "emotions": {
+      "joy": "Neşe",
+      "sadness": "Hüzün",
+      "anger": "Öfke",
+      "anxiety": "Endişe",
+      "calm": "Huzur",
+      "excitement": "Heyecan"
+    },
+    "intensity": {
+      "1": "Hafif his",
+      "2": "Orta his",
+      "3": "Yoğun his"
+    },
+    "noRecordYet": "Henüz kayıt yok"
+  },
+  "cardStyles": {
+    "minimalGradient": "Minimal Gradyan",
+    "paperTexture": "Kâğıt Doku",
+    "y2kChrome": "Y2K Krom",
+    "cottagecoreWatercolor": "Cottagecore Sulu Boya",
+    "nightNeon": "Gece Neonu"
+  },
+  "astronomy": {
+    "moonNames": [
+      "Kurt Dolunayı", "Kar Dolunayı", "Solucan Dolunayı", "Pembe Dolunay",
+      "Çiçek Dolunayı", "Çilek Dolunayı", "Geyik Dolunayı", "Mersin Balığı Dolunayı",
+      "Hasat Dolunayı", "Avcı Dolunayı", "Kunduz Dolunayı", "Soğuk Dolunay"
+    ],
+    "superMoon": "Süper {{moonName}} 🌕✨",
+    "springEquinoxTitle": "İlkbahar Ekinoksu 🌸",
+    "springEquinoxDesc": "Gece ve gündüzün eşitlendiği, doğanın uyandığı gün.",
+    "summerSolsticeTitle": "Yaz Gündönümü ☀️",
+    "summerSolsticeDesc": "Yılın en uzun günü, güneşin zirvede olduğu an.",
+    "autumnEquinoxTitle": "Sonbahar Ekinoksu 🍂",
+    "autumnEquinoxDesc": "Gece ve gündüzün yeniden eşitlendiği, yavaşlama zamanı.",
+    "winterSolsticeTitle": "Kış Gündönümü ❄️",
+    "winterSolsticeDesc": "Yılın en uzun gecesi, ışığın yeniden doğuşu.",
+    "newYearTitle": "Yeni Yıl 🎉",
+    "newYearDesc": "Takvimde yeni bir sayfa açılıyor.",
+    "yearEndTitle": "Yılın Son Günü 🥂",
+    "yearEndDesc": "Tüm yılın renklerini kutlama günü.",
+    "fullMoonDesc": "Ayın en parlak ve dolgun hali gökyüzünde.",
+    "newMoonTitle": "Yeni Ay 🌑",
+    "newMoonDesc": "Karanlık gökyüzü, yeni niyetler için taze bir başlangıç.",
+    "meteorShower": {
+      "quadrantids": "Quadrantid Meteor Yağmuru ☄️",
+      "perseids": "Perseid Meteor Yağmuru ☄️",
+      "geminids": "Geminid Meteor Yağmuru ☄️",
+      "desc": "Gökyüzü bu gece kayan yıldızlarla dolu."
+    }
+  },
+  "specialEvents": {
+    "birthdayTitle": "İyi Ki Doğdun! 🎂🎉",
+    "birthdayDesc": "Bugün senin özel günün, kendini kutla!",
+    "anniversaryTitle": "Hueday Yıl Dönümü ({{years}}. Yıl) 🌟",
+    "anniversaryDesc": "Hueday'e katılışının {{years}}. yıl dönümü.",
+    "milestone100Title": "100. Gün Kartı Miladı 💯🏆",
+    "milestone100Desc": "100 gün boyunca rengini kaydettin!",
+    "milestone365Title": "365 Günlük Dev Seri 👑✨",
+    "milestone365Desc": "Tam bir yıl boyunca her gün rengini kaydettin!"
+  },
+  "weather": {
+    "firstSnowTitle": "Yılın İlk Karı ❄️✨",
+    "firstSnowDesc": "Bulunduğun şehre sezonun ilk karı düştü!",
+    "conditions": {
+      "Güneşli": "Güneşli",
+      "Parçalı Bulutlu": "Parçalı Bulutlu",
+      "Bulutlu": "Bulutlu",
+      "Yağmurlu": "Yağmurlu",
+      "Kar Yağışlı": "Kar Yağışlı",
+      "Fırtınalı": "Fırtınalı",
+      "Sisli": "Sisli",
+      "Rüzgarlı": "Rüzgarlı"
+    }
+  },
+  "notifications": {
+    "dailyReminderTitle": "Bugün hangi renktesin?",
+    "dailyReminderBody": "10 saniyede ruh halini gir, gün kartını üret.",
+    "taskReminderTitle": "Hueday Görev Hatırlatıcısı 📌"
+  },
+  "storageSeed": {
+    "capsuleNotePrefix": "[Niyet Kapsülü] {{text}}",
+    "chats": {
+      "deniz1": "Bugün hangi renktesin? Ben yeşil tonlardayım 🌿",
+      "deniz2": "Ben de bugün biraz sakin mavi-yeşil tonlardayım!",
+      "deniz3": "Süper! Vibe eşleşmesi yakaladık o zaman ✨",
+      "elif1": "Bugünkü Y2K Krom kartın mükemmel olmuş!",
+      "merve1": "Selam! Hueday e hoş geldin 🎨"
+    }
+  },
+  "friendReplies": {
+    "deniz": {
+      "vibe": "Dingin & Sakin",
+      "replies": [
+        "Müthiş bir renk seçimi olmuş! Sakin tonlar sana çok yakışıyor. 🌿",
+        "Bugün ben de çok dingin hissettim, renklerimiz resmen bunu söylüyor.",
+        "Bence bu tonlar senin iç dünyandaki dengeyi yansıtıyor. 💫",
+        "Günün kartını story olarak paylaştın mı? Tasarımı harika!"
+      ]
+    },
+    "elif": {
+      "vibe": "Canlı & Işıltılı",
+      "replies": [
+        "Oooo harika! 💫 Bayıldım bu paletteki renk geçişlerine!",
+        "Bugün aynı vibe'dayız demek! Resmen parlıyoruz 🥳",
+        "Senin renklerin her zaman bana çok büyük ilham veriyor!",
+        "Hadi bu enerjiyi dışarı çıkarıp paylaşalım!"
+      ]
+    },
+    "merve": {
+      "vibe": "Sanatsal & Sakin",
+      "replies": [
+        "Bu renk kombinasyonu çok sanatsal olmuş. Tasarımlarımda bu hex kodlarını kullanabilirim! 🎨",
+        "Yeni kart stillerini denedin mi? Y2K Krom stili kesinlikle favorim!",
+        "Yıl sonu renk gobleni çıktısını alıp duvarıma poster olarak asmayı düşünüyorum ✨",
+        "Renklerin takvimdeki dizilimi o kadar simetrik ki, baktıkça huzur buluyorum."
+      ]
+    },
+    "unknown": {
+      "vibe": "Belirsiz",
+      "replies": ["Harika!"]
+    }
+  },
+  "crystals": {
+    "ametist": {
+      "name": "Ametist",
+      "tagline": "Ametist — Zihinsel berraklık ve iç huzur günü",
+      "affirmations": [
+        "Zihnimi sakinleştiriyor, kendi ritmime güveniyorum.",
+        "Düşüncelerim net ve berrak.",
+        "Bugün içsel huzurumu koruyorum."
+      ]
+    },
+    "gul-kuvarsi": {
+      "name": "Gül Kuvarsı",
+      "tagline": "Gül kuvarsı — Kendine şefkat günü",
+      "affirmations": [
+        "Bugün kendime nazik davranmayı seçiyorum.",
+        "Kalbimi şefkatle ve sevgiyle açıyorum.",
+        "Olduğum halimle yeterliyim."
+      ]
+    },
+    "sitrin": {
+      "name": "Sitrin",
+      "tagline": "Sitrin — Neşe ve bolluk niyetleri",
+      "affirmations": [
+        "Güneşin neşesini içimde hissediyorum.",
+        "Küçük anlardaki bolluğu fark ediyorum.",
+        "Bugün gülümsemek için nedenlerimi çoğaltıyorum."
+      ]
+    },
+    "ay-tasi": {
+      "name": "Ay Taşı",
+      "tagline": "Ay taşı — Sezgi ve yenilik günü",
+      "affirmations": [
+        "İçsel sezgilerime alan açıyorum.",
+        "Değişimi zarafetle karşılıyorum.",
+        "Duygularımın akışına izin veriyorum."
+      ]
+    },
+    "obsidyen": {
+      "name": "Obsidyen",
+      "tagline": "Obsidyen — Kendi sınırlarını koruma günü",
+      "affirmations": [
+        "Kendi alanımı sevgiyle koruyorum.",
+        "Hayır demeyi bir özsaygı olarak görüyorum.",
+        "Günü kendi merkezimde tamamlıyorum."
+      ]
+    },
+    "akuamarin": {
+      "name": "Akuamarin",
+      "tagline": "Akuamarin — Ferahlık ve ifade günü",
+      "affirmations": [
+        "Hissediklerimi özgürce ve sakince ifade ediyorum.",
+        "Su gibi rahat ve esneğim.",
+        "Zihnimi ferah bir nefesle tazeliyorum."
+      ]
+    },
+    "kaplan-gozu": {
+      "name": "Kaplan Gözü",
+      "tagline": "Kaplan gözü — Cesaret ve odak günü",
+      "affirmations": [
+        "Kararlarıma ve adımlarıma güveniyorum.",
+        "Bugün hedefime odaklı kalıyorum.",
+        "Zorlukları cesaretle karşılıyorum."
+      ]
+    },
+    "yesim": {
+      "name": "Yeşim",
+      "tagline": "Yeşim — Denge ve yenilenme günü",
+      "affirmations": [
+        "Doğanın dengesini hayatıma davet ediyorum.",
+        "Tazeleniyor ve yenileniyorum.",
+        "Her an yeni bir başlangıçtır."
+      ]
+    }
+  },
+  "artistPalettes": {
+    "toskana-gunbatimi": { "themeName": "Toskana Günbatımı", "description": "Sıcak, tozlu ve yavaşlayan bir akşam ışığı." },
+    "neo-tokyo-gece": { "themeName": "Neo-Tokyo Gece", "description": "Neon ıslak asfalt ve şehrin elektrikli nabzı." },
+    "cam-goletler": { "themeName": "Cam Gölerler", "description": "Dağ havasında berrak, sakin ve derin bir nefes." },
+    "safran-pazari": { "themeName": "Safran Pazarı", "description": "Baharat kokulu sokaklar ve canlı bir kalabalık." },
+    "lavanta-alacakaranlik": { "themeName": "Lavanta Alacakaranlığı", "description": "Günün son ışığında yumuşak ve düşünceli bir sessizlik." },
+    "mercan-resif": { "themeName": "Mercan Resifi", "description": "Su altında canlı, oyuncu ve enerjik bir renk cümbüşü." },
+    "kagit-ve-murekkep": { "themeName": "Kağıt ve Mürekkep", "description": "Minimal, kâğıt dokulu ve sözü az bir gün." },
+    "cumak-ormanlari": { "themeName": "Çamlı Orman", "description": "Nemli toprak kokusu ve köklü bir dinginlik." },
+    "gece-yarisi-neonu": { "themeName": "Gece Yarısı Neonu", "description": "Uykusuz şehirlerin elektrikli ve cesur ruhu." }
+  }
+}

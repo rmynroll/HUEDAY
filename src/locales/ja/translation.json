@@ -1,0 +1,547 @@
+{
+  "common": {
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "saving": "保存中...",
+    "apply": "適用 ✨",
+    "applied": "適用済み ✓",
+    "applying": "適用中…",
+    "delete": "削除",
+    "send": "送信",
+    "sharing": "準備中…"
+  },
+  "nav": {
+    "today": "今日",
+    "calendar": "カレンダー",
+    "moodCalendar": "気分カレンダー",
+    "studio": "スタジオ",
+    "album": "アルバム",
+    "chats": "Vibe Chat",
+    "dayCard": "デイカード",
+    "settings": "設定",
+    "wrapped": "月間まとめ"
+  },
+  "notFound": {
+    "title": "おっと!",
+    "message": "この画面は存在しません。",
+    "goHome": "ホーム画面へ!"
+  },
+  "today": {
+    "heading": "今日は何色の気分?",
+    "subheading": "下のスライダーとタグで気分を表現してみましょう。",
+    "taskBridge": "📌 今日は{{completed}}/{{total}}個のタスクを完了しました ✨",
+    "modeDetailed": "詳細",
+    "modeQuick": "クイック入力",
+    "quickPickHeading": "色を選ぶ",
+    "styleSectionTitle": "カードスタイルを選ぶ",
+    "noteSectionTitle": "今日のメモ",
+    "notePlaceholder": "一言メモを書いてみましょう...(任意)",
+    "musicSectionTitle": "🎵 今日の曲",
+    "songNamePlaceholder": "曲名",
+    "artistPlaceholder": "アーティスト",
+    "updatingButton": "カードを更新中…",
+    "updateButton": "カードを更新する ✨",
+    "createButton": "カードを作成する ✨",
+    "upgradeModal": {
+      "title": "hueday+ でもっと楽しもう 👑",
+      "subtitle": "色で自分らしさを表現する、一番美しい方法を見つけよう。",
+      "benefit1Title": "すべてのカードスタイル",
+      "benefit1Desc": "Y2Kクローム、水彩、ナイトネオンスタイルにアクセス。",
+      "benefit2Title": "壁紙セット",
+      "benefit2Desc": "今日のカードからロック画面とホーム画面の壁紙を作成。",
+      "benefit3Title": "セイムバイブマッチ",
+      "benefit3Desc": "同じ日に友達と似た気分を見つけよう。",
+      "price": "月額わずか $2.99",
+      "upgradeButton": "Hueday+ にアップグレード",
+      "continueFree": "無料版を続ける"
+    }
+  },
+  "calendar": {
+    "heading": "カラーカレンダー",
+    "wrappedButton": "✨ {{month}}のまとめを見る"
+  },
+  "moodCalendar": {
+    "heading": "気分カレンダー",
+    "subheading": "日付をタップして、その日の気分の色をマークしましょう。",
+    "monthSummaryTitle": "今月のあなたの色",
+    "noRecordYet": "まだ記録がありません",
+    "modalSubtitle": "今日の色を選び、長押しで強さを調整できます。",
+    "close": "閉じる"
+  },
+  "studio": {
+    "heading": "アーティストスタジオ",
+    "subheading": "デザイナーが共有するカラーテーマを見つけて、ワンタップで今日のカードに適用しよう。",
+    "appliedHint": "✨ 今日のカードに適用されました — 「今日」と「カレンダー」タブで確認できます。"
+  },
+  "album": {
+    "filters": {
+      "all": "すべて 🌟",
+      "seasonal": "季節 🍁",
+      "astronomical": "天体イベント 🌕",
+      "personal": "パーソナル 🎂",
+      "weather": "天気 ❄️"
+    },
+    "title": "コレクション&タイム 🏆",
+    "cardsSegment": "カードアルバム 🖼️",
+    "capsulesSegment": "タイムカプセル ⌛",
+    "yearCollection": "{{year}}年のコレクション",
+    "rareCardsProgress": "{{earned}} / {{total}} 枚のレアカードを獲得",
+    "emptyCategory": "このカテゴリにはまだカードや予定イベントがありません。",
+    "upcomingEvent": "近日中のイベント",
+    "capsuleEmptyTitle": "最初のタイムカプセルを封印しよう",
+    "capsuleEmptyDesc": "デイカードにあなただけの想いを書いて、1年後に開くよう封印しましょう。ちょうど365日後に開く特別なサプライズを作りましょう。",
+    "capsuleEmptyButton": "+ 今日のカードにメモを封印する",
+    "pendingCapsules": "封印中のカプセル 🔒 ({{count}})",
+    "openingIn": "あと{{days}}日で開封 ⌛",
+    "readyNow": "今すぐ開ける ✨",
+    "daysLeft": "残り{{days}}日",
+    "openedChain": "開封済みカプセルの記録 ⛓️",
+    "sealedAndOpened": "封印&開封済み ✨",
+    "replyCapsuleTag": "(返信カプセル)"
+  },
+  "chatsList": {
+    "heading": "Vibe Chat",
+    "subheading": "毎日の色やバイブを友達とシェアしよう。",
+    "youPrefix": "あなた: ",
+    "noMessages": "まだメッセージがありません。最初のメッセージを送りましょう!"
+  },
+  "chat": {
+    "inputPlaceholder": "{{friend}}にメッセージ...",
+    "send": "送信"
+  },
+  "card": {
+    "sameVibeBanner": "💫 Denizと同じバイブです!マッチを見る",
+    "shareStory": "ストーリーとしてシェア",
+    "wallpaperButton": "📱 壁紙セットを作成",
+    "capsuleButton": "📜 タイムカプセルに封印",
+    "morningRitualBadge": "モーニングリチュアル 🔮",
+    "editRitual": "編集 ✍️",
+    "sealedUntilMonthEnd": "🔒 月末まで封印中",
+    "addRitualButton": "+ 石を選んで一日を始める 🔮",
+    "emptyFutureTitle": "これから来る日",
+    "emptyPastTitle": "まだ色がありません",
+    "emptyFutureDesc": "この日の色は、日が来ると生まれます。今のうちにタスクやメモを計画しておけます。",
+    "emptyPastDesc": "今日はまだ気分を記録していません。いつでもホーム画面に戻って色を作成できます。",
+    "createTodayButton": "+ 今日のカラーカードを作成",
+    "memoriesTitle": "✨ 今日の思い出",
+    "memoryPlaceholder": "思い出を残す...",
+    "wordOfDayLabel": "💬 今日の一言",
+    "wordOfDayPlaceholder": "一言(最大20文字)",
+    "agendaTitle": "📌 今日のアジェンダ",
+    "agendaStats": "{{completed}} / {{total}} 完了",
+    "taskPlaceholder": "新しいタスクを追加...",
+    "timePlaceholder": "時間 (14:30)",
+    "addButton": "追加",
+    "emptyAgenda": "この日にはまだタスクがありません。小さな一歩を踏み出しましょう!",
+    "carryToTomorrow": "↪ 明日に持ち越す",
+    "noteAreaTitle": "📝 今日のアジェンダメモ",
+    "noteAreaPlaceholder": "やること、考えたこと、この日の特別なメモなど...",
+    "wallpaperModal": {
+      "addQuoteTitle": "モチベーションの言葉を追加",
+      "noQuote": "言葉なし",
+      "customQuotePlaceholder": "または自分の言葉を書く...",
+      "toneTitle": "カラートーンのプリセット",
+      "downloadButton": "壁紙をダウンロード / シェア",
+      "savingButton": "保存中…",
+      "closeButton": "閉じる",
+      "brand": "HUEDAY WALLPAPER"
+    },
+    "wallpaperUpgradeModal": {
+      "title": "壁紙セットをアンロック",
+      "subtitle": "今日のカラートーンから、高解像度のロック画面壁紙セットを生成しよう。",
+      "tryButton": "Hueday+ を無料で試す",
+      "cancelButton": "キャンセル"
+    },
+    "motivationalQuotes": [
+      "どんなに暗い瞬間も、あなたの光はそばにある。",
+      "今日のリズムはあなたが決める。",
+      "毎日が新しいキャンバス。",
+      "あなたの可能性は、あなたの色と同じくらい無限。",
+      "静けさの中で、自分だけの色を見つける。",
+      "小さな一歩が、大きな変化になる。"
+    ],
+    "tonePresets": {
+      "original": "オリジナル",
+      "golden": "ゴールデンアワー 🌅",
+      "midnight": "ミッドナイトミスト 🌌",
+      "pastel": "パステルドリーム 🌸",
+      "vibrant": "ビビッドネオン ⚡"
+    }
+  },
+  "wrapped": {
+    "title": "hueday wrapped",
+    "subtitle": "色で紡がれた、あなたの物語。",
+    "dominantPaletteTitle": "あなたのドミナントパレット",
+    "mostProductiveDay": "⚡ 最も充実した日",
+    "taskCountAndColor": "{{date}}、{{count}}個のタスク — その日の色はこちら",
+    "moodWaveTitle": "あなたの気分の波",
+    "notEnoughDataForWave": "波を描くには、少なくとも2日分の記録が必要です。",
+    "recordedDays": "記録した日数",
+    "recordedDaysValue": "{{count}}日",
+    "weightedMood": "加重平均の気分",
+    "overallEnergy": "全体のエネルギー",
+    "shareButton": "まとめをストーリーでシェア",
+    "sharingLabel": "準備中…",
+    "closeButton": "閉じる",
+    "emptyMonthText": "今月はまだ記録されたデイカードがありません。",
+    "backButton": "戻る",
+    "moodWords": {
+      "calm": "穏やかで安らか",
+      "balanced": "バランスが取れて安定",
+      "vibrant": "生き生きと輝く"
+    }
+  },
+  "settings": {
+    "premiumMemberTitle": "hueday+ メンバー 👑",
+    "premiumUpgradeTitle": "hueday+ に切り替える",
+    "premiumMemberDesc": "プレミアム機能をお楽しみください!すべてのカードスタイル、壁紙セットなどが利用可能です。",
+    "premiumUpgradeDesc": "すべてのカードスタイル(Y2Kクローム、水彩、ネオン)、壁紙セット、ウィジェット、Hue Blend機能をアンロック。",
+    "tryButton": "Hueday+ を試す",
+    "notificationsSection": "通知",
+    "dailyReminderTitle": "毎日の夜のリマインダー",
+    "dailyReminderDesc": "21:00に今日の色を尋ねます。",
+    "dataSection": "データとプライバシー",
+    "resetAllButton": "すべてのデータをリセット",
+    "appName": "hueday",
+    "appVersion": "バージョン 1.0.0 (v57.0.0)",
+    "appQuote": "「毎日には色がある。」",
+    "resetModal": {
+      "title": "データをリセット ⚠️",
+      "warning": "過去のデイカードはすべて削除されます。この操作は取り消せません。よろしいですか?",
+      "cancel": "キャンセル",
+      "confirm": "はい、リセットします"
+    },
+    "languageSection": "言語"
+  },
+  "moodSelector": {
+    "energyTitle": "エネルギー",
+    "sleepTitle": "睡眠",
+    "socialityTitle": "社交性",
+    "energyMin": "眠る残り火",
+    "energyMax": "燃え盛る炎",
+    "sleepMin": "霧がかった",
+    "sleepMax": "澄み切った",
+    "socialMin": "ひとりの時間",
+    "socialMax": "みんなと一緒",
+    "livePreviewLabel": "今日のパレット — ライブプレビュー",
+    "energyStatus": {
+      "idle": "アイドル",
+      "calm": "穏やか",
+      "balanced": "バランス",
+      "flowing": "フロー状態",
+      "blazing": "全開"
+    },
+    "sleepStatus": {
+      "foggy": "霧がかった",
+      "resting": "休息中",
+      "balanced": "バランス",
+      "clear": "澄み切った",
+      "peak": "絶好調"
+    },
+    "socialStatus": {
+      "ownWorld": "自分の世界",
+      "introverted": "内向的",
+      "selective": "選択的",
+      "sharing": "シェア中",
+      "everyone": "みんなと一緒"
+    }
+  },
+  "openingCeremony": {
+    "yearLaterBadge": "1年後の今日 ⌛",
+    "noteFromLastYear": "去年の今日からのメモがあります",
+    "sealedOnDate": "{{date}}に封印されました。",
+    "tapToCrack": "タップして封を割る 💥",
+    "capsuleNoteBadge": "あなたのカプセルメモ 📜",
+    "saidLastYear": "1年前、あなたはこう言いました:",
+    "seeColorComparison": "色の比較を見る 🎨",
+    "colorsBadge": "色の比較 🎨",
+    "oneYearAgoToday": "1年前 / 今日",
+    "todayLabel": "今日",
+    "notChosenYet": "今日の色はまだ選んでいません 🌱",
+    "writeReplyButton": "去年の自分へ返信を書く 📝",
+    "timeLoopBadge": "タイムループ 🔄",
+    "whatToSayToLastYear": "去年の自分に何を伝えたいですか?",
+    "replyBecomesCapsule": "あなたの返信は、来年へ向けた新しいタイムカプセルとして封印されます。",
+    "replyPlaceholder": "未来や過去の自分への返信を書いてみましょう...",
+    "sealReplyButton": "返信を封印して完了 🔒",
+    "skipButton": "スキップして完了 ✨"
+  },
+  "crystal": {
+    "morningRitualBadge": "一日を始める — モーニングリチュアル 🔮",
+    "chooseStoneTitle": "石を選び、今日の意図を定める",
+    "suggestedAffirmations": "おすすめのアファメーション",
+    "orWriteOwn": "または自分の意図を書く",
+    "intentPlaceholder": "今日、何を意図しますか?",
+    "sealMonthTitle": "月末まで封印する 🔒",
+    "sealMonthDesc": "意図は月末まで保存され、まとめで表示されます。",
+    "saving": "保存中...",
+    "saveButton": "石と意図を保存 ✨"
+  },
+  "audioMemo": {
+    "label": "🎙️ ボイスメモ",
+    "recordLabel": "ボイスメモを残す",
+    "stopLabel": "停止",
+    "maxDuration": "最大5分",
+    "stopRecordingA11y": "録音を停止",
+    "startRecordingA11y": "録音を開始",
+    "pauseA11y": "音声を一時停止",
+    "playA11y": "音声を再生",
+    "deleteA11y": "ボイスメモを削除"
+  },
+  "sealingRitual": {
+    "badge": "タイムカプセルを封印中",
+    "title": "過去または未来の自分へのメモ 📜",
+    "warning": "⚠️ このメモは1年間、あなた自身も含めて誰にも読めません。ちょうど365日後に開封されます。",
+    "notePlaceholder": "1年後の自分に何を伝えたいですか?思い、気持ち、願いを書いてみましょう...",
+    "sealButton": "封印する 🔒",
+    "cancelButton": "キャンセル",
+    "freezing": "封蝋が固まっています..."
+  },
+  "polaroid": {
+    "label": "📸 思い出の写真",
+    "addPhotoA11y": "写真を追加",
+    "addPhotoLabel": "写真を追加",
+    "captionPlaceholder": "思い出のメモを残す...",
+    "addNotePlaceholder": "✍️ メモを追加..."
+  },
+  "tagPicker": {
+    "low": "低い",
+    "mid": "普通",
+    "high": "高い"
+  },
+  "moodSlider": {
+    "low": "低い",
+    "high": "高い"
+  },
+  "colorMoodPicker": {
+    "hint": "タップ: 選択/解除 · 長押し: 強さを変更"
+  },
+  "weekdays": ["月", "火", "水", "木", "金", "土", "日"],
+  "hueMotor": {
+    "low": ["今日はゆっくりしたペースでしたね。", "静かな一日でした。", "内側に向き合う一日でした。", "自分に優しくしてあげましょう。"],
+    "mid": ["バランスの取れた一日でした。", "穏やかで安定していました。", "ちょうど中間くらいでした。", "いつもの心地よいリズムでした。"],
+    "high": ["今日は輝いていましたね。", "エネルギーに満ちていました。", "光り輝く一日でした。", "自分らしさを見つけた一日でした。"]
+  },
+  "dimensions": {
+    "flowingNoon": "フローイングヌーン",
+    "blazingJoy": "ブレイジングジョイ",
+    "highFrequency": "ハイフリークエンシー",
+    "clearRetreat": "クリアリトリート",
+    "balancedAndClear": "バランス&クリア",
+    "foggyFocus": "フォギーフォーカス",
+    "idleCalm": "アイドルカーム",
+    "openCircle": "オープンサークル",
+    "ownUniverse": "自分だけの宇宙",
+    "calmBalance": "穏やかなバランス"
+  },
+  "colorMood": {
+    "emotions": {
+      "joy": "喜び",
+      "sadness": "悲しみ",
+      "anger": "怒り",
+      "anxiety": "不安",
+      "calm": "穏やか",
+      "excitement": "ワクワク"
+    },
+    "intensity": {
+      "1": "軽い気持ち",
+      "2": "中くらいの気持ち",
+      "3": "強い気持ち"
+    },
+    "noRecordYet": "まだ記録がありません"
+  },
+  "cardStyles": {
+    "minimalGradient": "ミニマルグラデーション",
+    "paperTexture": "ペーパーテクスチャ",
+    "y2kChrome": "Y2Kクローム",
+    "cottagecoreWatercolor": "コテージコア水彩",
+    "nightNeon": "ナイトネオン"
+  },
+  "astronomy": {
+    "moonNames": [
+      "ウルフムーン", "スノームーン", "ワームムーン", "ピンクムーン",
+      "フラワームーン", "ストロベリームーン", "バックムーン", "スタージョンムーン",
+      "ハーベストムーン", "ハンターズムーン", "ビーバームーン", "コールドムーン"
+    ],
+    "superMoon": "スーパー{{moonName}} 🌕✨",
+    "springEquinoxTitle": "春分 🌸",
+    "springEquinoxDesc": "昼と夜の長さが等しくなり、自然が目覚める日。",
+    "summerSolsticeTitle": "夏至 ☀️",
+    "summerSolsticeDesc": "一年で最も昼が長く、太陽が最も高く昇る日。",
+    "autumnEquinoxTitle": "秋分 🍂",
+    "autumnEquinoxDesc": "昼と夜の長さが再び等しくなる、心を落ち着ける時期。",
+    "winterSolsticeTitle": "冬至 ❄️",
+    "winterSolsticeDesc": "一年で最も夜が長く、光が生まれ変わる日。",
+    "newYearTitle": "新年 🎉",
+    "newYearDesc": "カレンダーに新しいページが開く。",
+    "yearEndTitle": "大晦日 🥂",
+    "yearEndDesc": "一年分の色を祝う日。",
+    "fullMoonDesc": "空に浮かぶ、最も明るく満ちた月。",
+    "newMoonTitle": "新月 🌑",
+    "newMoonDesc": "暗い夜空 — 新しい意図のための新たなスタート。",
+    "meteorShower": {
+      "quadrantids": "しぶんぎ座流星群 ☄️",
+      "perseids": "ペルセウス座流星群 ☄️",
+      "geminids": "ふたご座流星群 ☄️",
+      "desc": "今夜の空は流れ星でいっぱいです。"
+    }
+  },
+  "specialEvents": {
+    "birthdayTitle": "お誕生日おめでとう! 🎂🎉",
+    "birthdayDesc": "今日はあなたの特別な日 — 自分自身をお祝いしましょう!",
+    "anniversaryTitle": "Hueday記念日({{years}}年目) 🌟",
+    "anniversaryDesc": "Huedayに参加してから{{years}}年目の記念日です。",
+    "milestone100Title": "100日達成のマイルストーン 💯🏆",
+    "milestone100Desc": "100日間、あなたの色を記録しました!",
+    "milestone365Title": "365日連続の偉業 👑✨",
+    "milestone365Desc": "まる1年間、毎日あなたの色を記録しました!"
+  },
+  "weather": {
+    "firstSnowTitle": "今年最初の雪 ❄️✨",
+    "firstSnowDesc": "あなたの街に、今シーズン最初の雪が降りました!",
+    "conditions": {
+      "Güneşli": "晴れ",
+      "Parçalı Bulutlu": "晴れ時々曇り",
+      "Bulutlu": "曇り",
+      "Yağmurlu": "雨",
+      "Kar Yağışlı": "雪",
+      "Fırtınalı": "嵐",
+      "Sisli": "霧",
+      "Rüzgarlı": "強風"
+    }
+  },
+  "notifications": {
+    "dailyReminderTitle": "今日は何色の気分?",
+    "dailyReminderBody": "10秒で気分を記録して、デイカードを作成しましょう。",
+    "taskReminderTitle": "Hueday タスクリマインダー 📌"
+  },
+  "storageSeed": {
+    "capsuleNotePrefix": "[意図のカプセル] {{text}}",
+    "chats": {
+      "deniz1": "今日は何色の気分?私は緑系の色だよ 🌿",
+      "deniz2": "私も今日は落ち着いた青緑系の気分だよ!",
+      "deniz3": "すごい!バイブが合ったみたいだね ✨",
+      "elif1": "今日のY2Kクロームのカード、最高にできてる!",
+      "merve1": "こんにちは!Huedayへようこそ 🎨"
+    }
+  },
+  "friendReplies": {
+    "deniz": {
+      "vibe": "穏やかで安らか",
+      "replies": [
+        "すごく素敵な色選びだね!落ち着いたトーンがすごく似合ってるよ。🌿",
+        "私も今日はすごく穏やかな気分だったよ、色が正直に語ってるね。",
+        "この色合いって、あなたの内面のバランスを映してる気がする。💫",
+        "今日のカード、ストーリーでシェアした?デザインが素敵!"
+      ]
+    },
+    "elif": {
+      "vibe": "生き生きと輝く",
+      "replies": [
+        "うわあ、素敵!💫 このパレットの色の移り変わりが大好き!",
+        "今日は同じバイブだったみたいだね!まさに輝いてる 🥳",
+        "あなたの色にはいつもすごく元気をもらってるよ!",
+        "このエネルギー、外に持ち出してシェアしよう!"
+      ]
+    },
+    "merve": {
+      "vibe": "アーティスティックで穏やか",
+      "replies": [
+        "この色の組み合わせ、すごくアーティスティックだね。このカラーコード、自分のデザインにも使えそう!🎨",
+        "新しいカードスタイル試した?Y2Kクロームが断然お気に入り!",
+        "年末のカラータペストリーを印刷してポスターとして飾りたいな ✨",
+        "カレンダーの色の並びがすごく対称的で、見てるだけで落ち着くよ。"
+      ]
+    },
+    "unknown": {
+      "vibe": "不明",
+      "replies": ["最高!"]
+    }
+  },
+  "crystals": {
+    "ametist": {
+      "name": "アメジスト",
+      "tagline": "アメジスト — 心の明晰さと内なる平和の日",
+      "affirmations": [
+        "心を落ち着け、自分自身のリズムを信じます。",
+        "私の思考は明晰で澄んでいます。",
+        "今日、私は自分の内なる平和を守ります。"
+      ]
+    },
+    "gul-kuvarsi": {
+      "name": "ローズクォーツ",
+      "tagline": "ローズクォーツ — 自分への思いやりの日",
+      "affirmations": [
+        "今日、私は自分自身に優しくすることを選びます。",
+        "思いやりと愛をもって、心を開きます。",
+        "私は、ありのままの自分で十分です。"
+      ]
+    },
+    "sitrin": {
+      "name": "シトリン",
+      "tagline": "シトリン — 喜びと豊かさの意図の日",
+      "affirmations": [
+        "太陽の喜びを、自分の中に感じます。",
+        "小さな瞬間の中にある豊かさに気づきます。",
+        "今日、私は微笑む理由を増やしていきます。"
+      ]
+    },
+    "ay-tasi": {
+      "name": "ムーンストーン",
+      "tagline": "ムーンストーン — 直感と再生の日",
+      "affirmations": [
+        "内なる直感のための余白をつくります。",
+        "変化を優雅に受け入れます。",
+        "自分の感情が流れるままに任せます。"
+      ]
+    },
+    "obsidyen": {
+      "name": "オブシディアン",
+      "tagline": "オブシディアン — 自分の境界線を守る日",
+      "affirmations": [
+        "愛をもって、自分の空間を守ります。",
+        "「ノー」と言うことを、自己尊重の行為として捉えます。",
+        "自分自身を中心にして、一日を締めくくります。"
+      ]
+    },
+    "akuamarin": {
+      "name": "アクアマリン",
+      "tagline": "アクアマリン — 心地よさと表現の日",
+      "affirmations": [
+        "感じていることを、自由に、穏やかに表現します。",
+        "水のように、軽やかでしなやかでいます。",
+        "軽い呼吸で、心をリフレッシュします。"
+      ]
+    },
+    "kaplan-gozu": {
+      "name": "タイガーアイ",
+      "tagline": "タイガーアイ — 勇気と集中の日",
+      "affirmations": [
+        "自分の決断と歩みを信じます。",
+        "今日、私は自分の目標に集中し続けます。",
+        "勇気をもって困難に立ち向かいます。"
+      ]
+    },
+    "yesim": {
+      "name": "ジェード",
+      "tagline": "ジェード — バランスと再生の日",
+      "affirmations": [
+        "自然のバランスを、自分の人生に招き入れます。",
+        "私は今、リフレッシュし、再生しています。",
+        "すべての瞬間が新しい始まりです。"
+      ]
+    }
+  },
+  "artistPalettes": {
+    "toskana-gunbatimi": { "themeName": "トスカーナの夕暮れ", "description": "温かく、ほこりっぽく、ゆっくりと流れる夕方の光。" },
+    "neo-tokyo-gece": { "themeName": "ネオ東京の夜", "description": "ネオンに濡れたアスファルトと、街の電気的な鼓動。" },
+    "cam-goletler": { "themeName": "ガラスの湖", "description": "澄んで穏やかな、山の空気の深い一呼吸。" },
+    "safran-pazari": { "themeName": "サフランマーケット", "description": "スパイスの香る通りと、活気ある人々。" },
+    "lavanta-alacakaranlik": { "themeName": "ラベンダーの黄昏", "description": "一日の最後の光の中の、柔らかく物思いにふける静けさ。" },
+    "mercan-resif": { "themeName": "サンゴ礁", "description": "水中で繰り広げられる、鮮やかで遊び心あふれるエネルギッシュな色彩。" },
+    "kagit-ve-murekkep": { "themeName": "紙とインク", "description": "ミニマルで紙の質感を持つ、言葉少なな一日。" },
+    "cumak-ormanlari": { "themeName": "松の森", "description": "湿った土の香りと、根を張った静けさ。" },
+    "gece-yarisi-neonu": { "themeName": "真夜中のネオン", "description": "眠らない街の、電気的で大胆な精神。" }
+  }
+}

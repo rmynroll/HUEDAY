@@ -1,0 +1,547 @@
+{
+  "common": {
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "saving": "Enregistrement...",
+    "apply": "Appliquer ✨",
+    "applied": "Appliqué ✓",
+    "applying": "Application…",
+    "delete": "Supprimer",
+    "send": "Envoyer",
+    "sharing": "Préparation…"
+  },
+  "nav": {
+    "today": "Aujourd'hui",
+    "calendar": "Calendrier",
+    "moodCalendar": "Calendrier d'Humeur",
+    "studio": "Studio",
+    "album": "Album",
+    "chats": "Vibe Chat",
+    "dayCard": "Carte du Jour",
+    "settings": "Paramètres",
+    "wrapped": "Récap Mensuel"
+  },
+  "notFound": {
+    "title": "Oups !",
+    "message": "Cet écran n'existe pas.",
+    "goHome": "Aller à l'écran d'accueil !"
+  },
+  "today": {
+    "heading": "De quelle couleur es-tu aujourd'hui ?",
+    "subheading": "Reflète ton humeur avec les curseurs et les tags ci-dessous.",
+    "taskBridge": "📌 Tu as terminé {{completed}}/{{total}} tâches aujourd'hui ✨",
+    "modeDetailed": "Détaillé",
+    "modeQuick": "Saisie rapide",
+    "quickPickHeading": "Choisis Ta Couleur",
+    "styleSectionTitle": "Choisir le Style de Carte",
+    "noteSectionTitle": "Note du Jour",
+    "notePlaceholder": "Écris un sentiment en une ligne... (optionnel)",
+    "musicSectionTitle": "🎵 Chanson du Jour",
+    "songNamePlaceholder": "Titre de la Chanson",
+    "artistPlaceholder": "Artiste",
+    "updatingButton": "Retouche de ta carte…",
+    "updateButton": "Mettre à Jour Ma Carte ✨",
+    "createButton": "Créer Ma Carte ✨",
+    "upgradeModal": {
+      "title": "Débloque plus avec hueday+ 👑",
+      "subtitle": "Découvre la plus belle façon de t'exprimer en couleur.",
+      "benefit1Title": "Tous les Styles de Carte",
+      "benefit1Desc": "Accède aux styles Y2K Chrome, Aquarelle et Néon Nocturne.",
+      "benefit2Title": "Ensemble de Fonds d'Écran",
+      "benefit2Desc": "Crée des fonds d'écran de verrouillage et d'accueil à partir de la carte du jour.",
+      "benefit3Title": "Correspondance de Même Vibe",
+      "benefit3Desc": "Découvre des humeurs similaires avec tes amis le même jour.",
+      "price": "Seulement 2,99 $ par mois",
+      "upgradeButton": "Passer à Hueday+",
+      "continueFree": "Continuer Gratuitement"
+    }
+  },
+  "calendar": {
+    "heading": "Calendrier des Couleurs",
+    "wrappedButton": "✨ Voir le Récap de {{month}}"
+  },
+  "moodCalendar": {
+    "heading": "Calendrier d'Humeur",
+    "subheading": "Touche un jour pour marquer sa couleur d'humeur.",
+    "monthSummaryTitle": "Ta Couleur du Mois",
+    "noRecordYet": "Pas encore d'entrées",
+    "modalSubtitle": "Choisis la couleur du jour, appuie longuement pour ajuster son intensité.",
+    "close": "Fermer"
+  },
+  "studio": {
+    "heading": "Studio d'Artistes",
+    "subheading": "Explore des thèmes de couleur partagés par des designers, applique-les à la carte du jour en un geste.",
+    "appliedHint": "✨ Appliqué à la carte du jour — tu peux le voir dans les onglets \"Aujourd'hui\" et \"Calendrier\"."
+  },
+  "album": {
+    "filters": {
+      "all": "Tous 🌟",
+      "seasonal": "Saisonnier 🍁",
+      "astronomical": "Événements Célestes 🌕",
+      "personal": "Personnel 🎂",
+      "weather": "Météo ❄️"
+    },
+    "title": "Collection & Temps 🏆",
+    "cardsSegment": "Album de Cartes 🖼️",
+    "capsulesSegment": "Capsules Temporelles ⌛",
+    "yearCollection": "Collection {{year}}",
+    "rareCardsProgress": "{{earned}} / {{total}} cartes rares débloquées",
+    "emptyCategory": "Pas encore de cartes ni d'événements à venir dans cette catégorie.",
+    "upcomingEvent": "Événement à Venir",
+    "capsuleEmptyTitle": "Scelle Ta Première Capsule Temporelle",
+    "capsuleEmptyDesc": "Écris tes pensées privées sur une carte du jour et scelle-la pour dans un an. Crée une surprise cérémoniale qui s'ouvre exactement 365 jours plus tard.",
+    "capsuleEmptyButton": "+ Sceller une Note sur la Carte d'Aujourd'hui",
+    "pendingCapsules": "Capsules en Attente 🔒 ({{count}})",
+    "openingIn": "S'ouvre dans {{days}} jours ⌛",
+    "readyNow": "Ouvrir Maintenant ✨",
+    "daysLeft": "{{days}} jours restants",
+    "openedChain": "Chaîne de Capsules Ouvertes ⛓️",
+    "sealedAndOpened": "Scellée & Ouverte ✨",
+    "replyCapsuleTag": "(Capsule de Réponse)"
+  },
+  "chatsList": {
+    "heading": "Vibe Chat",
+    "subheading": "Partage tes couleurs et vibes quotidiennes avec tes amis.",
+    "youPrefix": "Toi : ",
+    "noMessages": "Pas encore de messages. Envoie le premier !"
+  },
+  "chat": {
+    "inputPlaceholder": "Message à {{friend}}...",
+    "send": "Envoyer"
+  },
+  "card": {
+    "sameVibeBanner": "💫 Tu as la Même Vibe que Deniz ! Voir la Correspondance",
+    "shareStory": "Partager en Story",
+    "wallpaperButton": "📱 Créer un Ensemble de Fonds d'Écran",
+    "capsuleButton": "📜 Sceller dans une Capsule Temporelle",
+    "morningRitualBadge": "RITUEL MATINAL 🔮",
+    "editRitual": "Modifier ✍️",
+    "sealedUntilMonthEnd": "🔒 Scellé jusqu'à la fin du mois",
+    "addRitualButton": "+ Choisir une Pierre & Commencer la Journée 🔮",
+    "emptyFutureTitle": "Un Jour à Venir",
+    "emptyPastTitle": "Pas Encore de Couleur",
+    "emptyFutureDesc": "La couleur de ce jour se formera à son arrivée. En attendant, tu peux planifier des tâches et des notes pour lui.",
+    "emptyPastDesc": "Tu n'as pas encore enregistré d'humeur pour aujourd'hui. Tu peux retourner à l'écran d'accueil à tout moment pour créer ta couleur.",
+    "createTodayButton": "+ Créer la Carte de Couleur d'Aujourd'hui",
+    "memoriesTitle": "✨ Souvenirs d'Aujourd'hui",
+    "memoryPlaceholder": "Laisse un souvenir...",
+    "wordOfDayLabel": "💬 Mot du Jour",
+    "wordOfDayPlaceholder": "Un mot (max. 20)",
+    "agendaTitle": "📌 Agenda Quotidien",
+    "agendaStats": "{{completed}} / {{total}} terminées",
+    "taskPlaceholder": "Ajouter une nouvelle tâche...",
+    "timePlaceholder": "Heure (14:30)",
+    "addButton": "Ajouter",
+    "emptyAgenda": "Aucune tâche ajoutée pour ce jour. Fais un petit pas !",
+    "carryToTomorrow": "↪ Reporter à Demain",
+    "noteAreaTitle": "📝 Note de l'Agenda Quotidien",
+    "noteAreaPlaceholder": "Choses à faire, pensées ou une note spéciale d'agenda pour ce jour...",
+    "wallpaperModal": {
+      "addQuoteTitle": "Ajouter une Citation Motivante",
+      "noQuote": "Sans citation",
+      "customQuotePlaceholder": "Ou écris ta propre citation...",
+      "toneTitle": "Préréglage de Ton de Couleur",
+      "downloadButton": "Télécharger / Partager le Fond d'Écran",
+      "savingButton": "Enregistrement…",
+      "closeButton": "Fermer",
+      "brand": "HUEDAY WALLPAPER"
+    },
+    "wallpaperUpgradeModal": {
+      "title": "Débloquer l'Ensemble de Fonds d'Écran",
+      "subtitle": "Génère un ensemble de fonds d'écran de verrouillage haute résolution dérivé des tons de couleur d'aujourd'hui.",
+      "tryButton": "Essayer Hueday+ Gratuitement",
+      "cancelButton": "Annuler"
+    },
+    "motivationalQuotes": [
+      "Ta lumière reste avec toi même dans le moment le plus sombre.",
+      "Tu définis le rythme d'aujourd'hui.",
+      "Chaque jour est une nouvelle toile.",
+      "Ton potentiel est aussi infini que tes couleurs.",
+      "Tu trouves ta propre couleur dans le silence.",
+      "Petits pas, grandes transformations."
+    ],
+    "tonePresets": {
+      "original": "Original",
+      "golden": "Heure Dorée 🌅",
+      "midnight": "Brume de Minuit 🌌",
+      "pastel": "Rêve Pastel 🌸",
+      "vibrant": "Néon Vibrant ⚡"
+    }
+  },
+  "wrapped": {
+    "title": "hueday wrapped",
+    "subtitle": "Ton histoire, tissée en couleur.",
+    "dominantPaletteTitle": "Ta Palette Dominante",
+    "mostProductiveDay": "⚡ Ton Jour le Plus Productif",
+    "taskCountAndColor": "{{date}}, {{count}} tâches — c'était sa couleur",
+    "moodWaveTitle": "Ta Vague d'Humeur",
+    "notEnoughDataForWave": "Au moins 2 jours doivent être enregistrés pour tracer la vague.",
+    "recordedDays": "Jours Enregistrés",
+    "recordedDaysValue": "{{count}} jours",
+    "weightedMood": "Humeur Pondérée",
+    "overallEnergy": "Énergie Globale",
+    "shareButton": "Partager le Récap en Story",
+    "sharingLabel": "Préparation…",
+    "closeButton": "Fermer",
+    "emptyMonthText": "Aucune carte de jour enregistrée pour ce mois pour l'instant.",
+    "backButton": "Retour",
+    "moodWords": {
+      "calm": "Calme & Paisible",
+      "balanced": "Équilibré & Stable",
+      "vibrant": "Vibrant & Éclatant"
+    }
+  },
+  "settings": {
+    "premiumMemberTitle": "membre hueday+ 👑",
+    "premiumUpgradeTitle": "Passer à hueday+",
+    "premiumMemberDesc": "Profite de tes fonctionnalités premium ! Tous les styles de carte, l'ensemble de fonds d'écran et plus sont débloqués.",
+    "premiumUpgradeDesc": "Débloque tous les styles de carte (Y2K Chrome, Aquarelle, Néon), l'ensemble de fonds d'écran, le widget et les fonctionnalités Hue Blend.",
+    "tryButton": "Essayer Hueday+",
+    "notificationsSection": "Notifications",
+    "dailyReminderTitle": "Rappel Quotidien du Soir",
+    "dailyReminderDesc": "Demande la couleur du jour à 21h00.",
+    "dataSection": "Données & Confidentialité",
+    "resetAllButton": "Réinitialiser Toutes les Données",
+    "appName": "hueday",
+    "appVersion": "Version 1.0.0 (v57.0.0)",
+    "appQuote": "\"Chaque jour a une couleur.\"",
+    "resetModal": {
+      "title": "Réinitialiser les Données ⚠️",
+      "warning": "Toutes tes cartes de jours passés seront supprimées. Cette action est irréversible. Es-tu sûr(e) ?",
+      "cancel": "Annuler",
+      "confirm": "Oui, Réinitialiser"
+    },
+    "languageSection": "Langue"
+  },
+  "moodSelector": {
+    "energyTitle": "Énergie",
+    "sleepTitle": "Sommeil",
+    "socialityTitle": "Sociabilité",
+    "energyMin": "braise endormie",
+    "energyMax": "pleine flamme",
+    "sleepMin": "brumeux",
+    "sleepMax": "clair",
+    "socialMin": "seul(e)",
+    "socialMax": "avec tout le monde",
+    "livePreviewLabel": "Palette du jour — aperçu en direct",
+    "energyStatus": {
+      "idle": "Au Repos",
+      "calm": "Calme",
+      "balanced": "Équilibré",
+      "flowing": "Fluide",
+      "blazing": "Enflammé"
+    },
+    "sleepStatus": {
+      "foggy": "Brumeux",
+      "resting": "Reposant",
+      "balanced": "Équilibré",
+      "clear": "Clair",
+      "peak": "Au Sommet"
+    },
+    "socialStatus": {
+      "ownWorld": "Dans Mon Propre Monde",
+      "introverted": "Introverti(e)",
+      "selective": "Sélectif(ve)",
+      "sharing": "Partageur(se)",
+      "everyone": "Avec Tout le Monde"
+    }
+  },
+  "openingCeremony": {
+    "yearLaterBadge": "UN AN PLUS TARD, AUJOURD'HUI ⌛",
+    "noteFromLastYear": "Tu As une Note de ce Jour l'Année Dernière",
+    "sealedOnDate": "Scellé le {{date}}.",
+    "tapToCrack": "Touche pour briser le sceau 💥",
+    "capsuleNoteBadge": "TA NOTE DE CAPSULE 📜",
+    "saidLastYear": "Il y a Un An, Tu T'es Dit :",
+    "seeColorComparison": "Voir la Comparaison de Couleurs 🎨",
+    "colorsBadge": "COMPARAISON DE COULEURS 🎨",
+    "oneYearAgoToday": "Il y a Un An / Aujourd'hui",
+    "todayLabel": "Aujourd'hui",
+    "notChosenYet": "Tu n'as pas encore choisi la couleur d'aujourd'hui 🌱",
+    "writeReplyButton": "Écrire une Réponse à Ton Toi de l'Année Dernière 📝",
+    "timeLoopBadge": "BOUCLE TEMPORELLE 🔄",
+    "whatToSayToLastYear": "Que Dirais-tu à Ton Toi de l'Année Dernière ?",
+    "replyBecomesCapsule": "Ta réponse sera scellée comme une nouvelle capsule temporelle pour l'année prochaine.",
+    "replyPlaceholder": "Écris une réponse à ton toi futur ou passé...",
+    "sealReplyButton": "Sceller la Réponse & Terminer 🔒",
+    "skipButton": "Passer & Terminer ✨"
+  },
+  "crystal": {
+    "morningRitualBadge": "COMMENCE LA JOURNÉE — RITUEL MATINAL 🔮",
+    "chooseStoneTitle": "Choisis Ta Pierre et Définis Ton Intention",
+    "suggestedAffirmations": "Affirmations Suggérées",
+    "orWriteOwn": "Ou Écris Ta Propre Intention",
+    "intentPlaceholder": "Quelle est ton intention pour aujourd'hui ?",
+    "sealMonthTitle": "Sceller Jusqu'à la Fin du Mois 🔒",
+    "sealMonthDesc": "Ton intention est conservée jusqu'à la fin du mois et affichée dans le récap.",
+    "saving": "Enregistrement...",
+    "saveButton": "Enregistrer la Pierre & l'Intention ✨"
+  },
+  "audioMemo": {
+    "label": "🎙️ Note Vocale",
+    "recordLabel": "Laisser une note vocale",
+    "stopLabel": "Arrêter",
+    "maxDuration": "Max. 5 minutes",
+    "stopRecordingA11y": "Arrêter l'enregistrement",
+    "startRecordingA11y": "Démarrer l'enregistrement vocal",
+    "pauseA11y": "Mettre l'audio en pause",
+    "playA11y": "Lire l'audio",
+    "deleteA11y": "Supprimer la note vocale"
+  },
+  "sealingRitual": {
+    "badge": "SCELLEMENT D'UNE CAPSULE TEMPORELLE",
+    "title": "Une Note à Ton Toi Passé ou Futur 📜",
+    "warning": "⚠️ Cette note ne pourra être lue par personne — même pas toi — pendant un an. Elle s'ouvrira exactement 365 jours à partir d'aujourd'hui.",
+    "notePlaceholder": "Que voudrais-tu te dire dans un an ? Écris tes pensées, tes sentiments et tes espoirs...",
+    "sealButton": "Sceller 🔒",
+    "cancelButton": "Annuler",
+    "freezing": "Le Sceau de Cire Durcit..."
+  },
+  "polaroid": {
+    "label": "📸 Photos Souvenirs",
+    "addPhotoA11y": "Ajouter une photo",
+    "addPhotoLabel": "Ajouter une Photo",
+    "captionPlaceholder": "Laisse une note souvenir...",
+    "addNotePlaceholder": "✍️ Ajouter une note..."
+  },
+  "tagPicker": {
+    "low": "Faible",
+    "mid": "Moyen",
+    "high": "Élevé"
+  },
+  "moodSlider": {
+    "low": "Faible",
+    "high": "Élevé"
+  },
+  "colorMoodPicker": {
+    "hint": "Toucher : sélectionner/retirer · Appui long : changer l'intensité"
+  },
+  "weekdays": ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"],
+  "hueMotor": {
+    "low": ["Tu as ralenti aujourd'hui.", "Ce fut une journée calme.", "Une journée tournée vers l'intérieur.", "Sois doux(ce) avec toi-même."],
+    "mid": ["Une journée équilibrée.", "Calme et stable.", "Quelque part au milieu.", "Un rythme familier."],
+    "high": ["Tu as brillé aujourd'hui.", "Ton énergie était haute.", "Une journée radieuse.", "Une journée où tu t'es retrouvé(e)."]
+  },
+  "dimensions": {
+    "flowingNoon": "Midi Fluide",
+    "blazingJoy": "Joie Enflammée",
+    "highFrequency": "Haute Fréquence",
+    "clearRetreat": "Retraite Claire",
+    "balancedAndClear": "Équilibré et Clair",
+    "foggyFocus": "Concentration Brumeuse",
+    "idleCalm": "Calme au Repos",
+    "openCircle": "Cercle Ouvert",
+    "ownUniverse": "Dans Ton Propre Univers",
+    "calmBalance": "Équilibre Serein"
+  },
+  "colorMood": {
+    "emotions": {
+      "joy": "Joie",
+      "sadness": "Tristesse",
+      "anger": "Colère",
+      "anxiety": "Anxiété",
+      "calm": "Calme",
+      "excitement": "Enthousiasme"
+    },
+    "intensity": {
+      "1": "Sensation légère",
+      "2": "Sensation moyenne",
+      "3": "Sensation intense"
+    },
+    "noRecordYet": "Pas encore d'entrées"
+  },
+  "cardStyles": {
+    "minimalGradient": "Dégradé Minimaliste",
+    "paperTexture": "Texture Papier",
+    "y2kChrome": "Y2K Chrome",
+    "cottagecoreWatercolor": "Aquarelle Cottagecore",
+    "nightNeon": "Néon Nocturne"
+  },
+  "astronomy": {
+    "moonNames": [
+      "Lune du Loup", "Lune des Neiges", "Lune du Ver", "Lune Rose",
+      "Lune des Fleurs", "Lune des Fraises", "Lune du Cerf", "Lune de l'Esturgeon",
+      "Lune des Moissons", "Lune du Chasseur", "Lune du Castor", "Lune Froide"
+    ],
+    "superMoon": "Super {{moonName}} 🌕✨",
+    "springEquinoxTitle": "Équinoxe de Printemps 🌸",
+    "springEquinoxDesc": "Le jour où la nuit et le jour sont égaux, et où la nature s'éveille.",
+    "summerSolsticeTitle": "Solstice d'Été ☀️",
+    "summerSolsticeDesc": "Le jour le plus long de l'année, où le soleil est à son zénith.",
+    "autumnEquinoxTitle": "Équinoxe d'Automne 🍂",
+    "autumnEquinoxDesc": "La nuit et le jour s'équilibrent à nouveau — un moment pour ralentir.",
+    "winterSolsticeTitle": "Solstice d'Hiver ❄️",
+    "winterSolsticeDesc": "La nuit la plus longue de l'année, la renaissance de la lumière.",
+    "newYearTitle": "Nouvel An 🎉",
+    "newYearDesc": "Une nouvelle page s'ouvre sur le calendrier.",
+    "yearEndTitle": "Le Dernier Jour de l'Année 🥂",
+    "yearEndDesc": "Un jour pour célébrer les couleurs de toute l'année.",
+    "fullMoonDesc": "La lune à son moment le plus brillant et le plus plein dans le ciel.",
+    "newMoonTitle": "Nouvelle Lune 🌑",
+    "newMoonDesc": "Un ciel sombre — un nouveau départ pour de nouvelles intentions.",
+    "meteorShower": {
+      "quadrantids": "Pluie de Météores Quadrantides ☄️",
+      "perseids": "Pluie de Météores Perséides ☄️",
+      "geminids": "Pluie de Météores Géminides ☄️",
+      "desc": "Le ciel est plein d'étoiles filantes ce soir."
+    }
+  },
+  "specialEvents": {
+    "birthdayTitle": "Joyeux Anniversaire ! 🎂🎉",
+    "birthdayDesc": "Aujourd'hui est ton jour spécial — célèbre-toi !",
+    "anniversaryTitle": "Anniversaire de Hueday (Année {{years}}) 🌟",
+    "anniversaryDesc": "C'est le {{years}}e anniversaire de ton arrivée sur Hueday.",
+    "milestone100Title": "Étape des 100 Jours de Cartes 💯🏆",
+    "milestone100Desc": "Tu as enregistré ta couleur pendant 100 jours !",
+    "milestone365Title": "Série Épique de 365 Jours 👑✨",
+    "milestone365Desc": "Tu as enregistré ta couleur tous les jours pendant une année entière !"
+  },
+  "weather": {
+    "firstSnowTitle": "La Première Neige de l'Année ❄️✨",
+    "firstSnowDesc": "La première neige de la saison est tombée sur ta ville !",
+    "conditions": {
+      "Güneşli": "Ensoleillé",
+      "Parçalı Bulutlu": "Partiellement Nuageux",
+      "Bulutlu": "Nuageux",
+      "Yağmurlu": "Pluvieux",
+      "Kar Yağışlı": "Neigeux",
+      "Fırtınalı": "Orageux",
+      "Sisli": "Brumeux",
+      "Rüzgarlı": "Venteux"
+    }
+  },
+  "notifications": {
+    "dailyReminderTitle": "De quelle couleur es-tu aujourd'hui ?",
+    "dailyReminderBody": "Enregistre ton humeur en 10 secondes, génère ta carte du jour.",
+    "taskReminderTitle": "Rappel de Tâche Hueday 📌"
+  },
+  "storageSeed": {
+    "capsuleNotePrefix": "[Capsule d'Intention] {{text}}",
+    "chats": {
+      "deniz1": "De quelle couleur es-tu aujourd'hui ? Je suis dans des tons verts 🌿",
+      "deniz2": "Je me sens aussi dans des tons bleu-vert calmes aujourd'hui !",
+      "deniz3": "Génial ! On dirait qu'on a la même vibe ✨",
+      "elif1": "La carte Y2K Chrome d'aujourd'hui est incroyable !",
+      "merve1": "Salut ! Bienvenue sur Hueday 🎨"
+    }
+  },
+  "friendReplies": {
+    "deniz": {
+      "vibe": "Calme & Paisible",
+      "replies": [
+        "Quel choix de couleur incroyable ! Les tons calmes te vont si bien. 🌿",
+        "Je me suis senti(e) très calme aujourd'hui aussi, nos couleurs le disent bien.",
+        "Je pense que ces tons reflètent l'équilibre de ton monde intérieur. 💫",
+        "As-tu partagé la carte d'aujourd'hui en story ? Le design est superbe !"
+      ]
+    },
+    "elif": {
+      "vibe": "Vibrant & Éclatant",
+      "replies": [
+        "Ooo incroyable ! 💫 J'adore les transitions de couleurs dans cette palette !",
+        "On dirait qu'on a la même vibe aujourd'hui ! On brille littéralement 🥳",
+        "Tes couleurs m'inspirent toujours énormément !",
+        "Emmenons cette énergie dehors et partageons-la !"
+      ]
+    },
+    "merve": {
+      "vibe": "Artistique & Calme",
+      "replies": [
+        "Cette combinaison de couleurs est devenue si artistique. Je pourrais utiliser ces codes hex dans mes créations ! 🎨",
+        "As-tu essayé les nouveaux styles de carte ? Y2K Chrome est définitivement mon préféré !",
+        "Je pense imprimer la tapisserie de couleurs de fin d'année et l'accrocher comme affiche ✨",
+        "L'agencement des couleurs dans le calendrier est si symétrique que ça m'apaise rien qu'en le regardant."
+      ]
+    },
+    "unknown": {
+      "vibe": "Inconnu",
+      "replies": ["Génial !"]
+    }
+  },
+  "crystals": {
+    "ametist": {
+      "name": "Améthyste",
+      "tagline": "Améthyste — Une journée de clarté mentale et de paix intérieure",
+      "affirmations": [
+        "J'apaise mon esprit et je fais confiance à mon propre rythme.",
+        "Mes pensées sont claires et lucides.",
+        "Aujourd'hui, je protège ma paix intérieure."
+      ]
+    },
+    "gul-kuvarsi": {
+      "name": "Quartz Rose",
+      "tagline": "Quartz rose — Une journée d'autocompassion",
+      "affirmations": [
+        "Aujourd'hui, je choisis d'être douce/doux avec moi-même.",
+        "J'ouvre mon cœur avec compassion et amour.",
+        "Je suis suffisant(e) tel(le) que je suis."
+      ]
+    },
+    "sitrin": {
+      "name": "Citrine",
+      "tagline": "Citrine — Intentions de joie et d'abondance",
+      "affirmations": [
+        "Je ressens la joie du soleil en moi.",
+        "Je remarque l'abondance dans les petits moments.",
+        "Aujourd'hui, je multiplie mes raisons de sourire."
+      ]
+    },
+    "ay-tasi": {
+      "name": "Pierre de Lune",
+      "tagline": "Pierre de lune — Une journée d'intuition et de renouveau",
+      "affirmations": [
+        "Je fais de la place pour mon intuition intérieure.",
+        "J'accueille le changement avec grâce.",
+        "Je laisse mes émotions circuler."
+      ]
+    },
+    "obsidyen": {
+      "name": "Obsidienne",
+      "tagline": "Obsidienne — Une journée pour protéger tes limites",
+      "affirmations": [
+        "Je protège mon propre espace avec amour.",
+        "Je vois le fait de dire non comme un acte de respect de soi.",
+        "Je termine la journée centré(e) sur moi-même."
+      ]
+    },
+    "akuamarin": {
+      "name": "Aigue-Marine",
+      "tagline": "Aigue-marine — Une journée de fluidité et d'expression",
+      "affirmations": [
+        "J'exprime ce que je ressens librement et calmement.",
+        "Je suis aussi fluide et flexible que l'eau.",
+        "Je rafraîchis mon esprit d'un souffle léger."
+      ]
+    },
+    "kaplan-gozu": {
+      "name": "Œil de Tigre",
+      "tagline": "Œil de tigre — Une journée de courage et de concentration",
+      "affirmations": [
+        "Je fais confiance à mes décisions et à mes pas.",
+        "Aujourd'hui, je reste concentré(e) sur mon objectif.",
+        "J'affronte les défis avec courage."
+      ]
+    },
+    "yesim": {
+      "name": "Jade",
+      "tagline": "Jade — Une journée d'équilibre et de renouveau",
+      "affirmations": [
+        "J'invite l'équilibre de la nature dans ma vie.",
+        "Je me rafraîchis et me renouvelle.",
+        "Chaque instant est un nouveau départ."
+      ]
+    }
+  },
+  "artistPalettes": {
+    "toskana-gunbatimi": { "themeName": "Coucher de Soleil Toscan", "description": "Une lumière de soir chaude, poussiéreuse et qui ralentit." },
+    "neo-tokyo-gece": { "themeName": "Nuit Néo-Tokyo", "description": "Asphalte mouillé de néon et pouls électrique de la ville." },
+    "cam-goletler": { "themeName": "Lacs de Verre", "description": "Un souffle d'air de montagne clair, calme et profond." },
+    "safran-pazari": { "themeName": "Marché au Safran", "description": "Rues parfumées d'épices et foule animée." },
+    "lavanta-alacakaranlik": { "themeName": "Crépuscule de Lavande", "description": "Un silence doux et pensif dans la dernière lumière du jour." },
+    "mercan-resif": { "themeName": "Récif de Corail", "description": "Un tourbillon de couleurs vives, joueuses et énergiques sous l'eau." },
+    "kagit-ve-murekkep": { "themeName": "Papier et Encre", "description": "Une journée minimaliste, texturée papier, aux mots rares." },
+    "cumak-ormanlari": { "themeName": "Forêt de Pins", "description": "L'odeur de la terre humide et une quiétude enracinée." },
+    "gece-yarisi-neonu": { "themeName": "Néon de Minuit", "description": "L'esprit électrique et audacieux des villes qui ne dorment jamais." }
+  }
+}

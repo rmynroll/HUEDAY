@@ -1,6 +1,6 @@
-import { SymbolView } from 'expo-symbols';
-import { Link, Tabs } from 'expo-router';
-import { Platform, Pressable } from 'react-native';
+import { Tabs, router } from 'expo-router';
+import { useTranslation } from 'react-i18next';
+import { Text, Pressable } from 'react-native';
 
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
@@ -8,61 +8,67 @@ import { useClientOnlyValue } from '@/components/useClientOnlyValue';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const { t } = useTranslation();
 
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
-        // Disable the static render of the header on web
-        // to prevent a hydration error in React Navigation v6.
         headerShown: useClientOnlyValue(false, true),
-      }}>
+        headerRight: () => (
+          <Pressable onPress={() => router.push('/settings')} style={{ marginRight: 16 }} hitSlop={12}>
+            <Text style={{ fontSize: 18 }}>⚙️</Text>
+          </Pressable>
+        ),
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => (
-            <SymbolView
-              name={{
-                ios: 'chevron.left.forwardslash.chevron.right',
-                android: 'code',
-                web: 'code',
-              }}
-              tintColor={color}
-              size={28}
-            />
-          ),
-          headerRight: () => (
-            <Link href="/modal" asChild>
-              <Pressable style={{ marginRight: 15 }}>
-                {({ pressed }) => (
-                  <SymbolView
-                    name={{ ios: 'info.circle', android: 'info', web: 'info' }}
-                    size={25}
-                    tintColor={Colors[colorScheme].text}
-                    style={{ opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
+          title: t('nav.today'),
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🎨</Text>,
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="calendar"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => (
-            <SymbolView
-              name={{
-                ios: 'chevron.left.forwardslash.chevron.right',
-                android: 'code',
-                web: 'code',
-              }}
-              tintColor={color}
-              size={28}
-            />
-          ),
+          title: t('nav.calendar'),
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>📅</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="journal"
+        options={{
+          title: t('nav.journal', 'Ajanda'),
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>✏️</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="mood-calendar"
+        options={{
+          title: t('nav.moodCalendar'),
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🌈</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="studio"
+        options={{
+          title: t('nav.studio'),
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🖌️</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="album"
+        options={{
+          title: t('nav.album'),
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🏆</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="chats"
+        options={{
+          title: t('nav.chats'),
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>💬</Text>,
         }}
       />
     </Tabs>
