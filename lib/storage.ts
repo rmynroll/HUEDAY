@@ -30,6 +30,19 @@ import type { LocationCoords } from './weather';
  */
 const seedStrings = Localization.getLocales()[0]?.languageCode === 'tr' ? trTranslation : enTranslation;
 
+export interface User {
+  name: string;
+  email: string;
+  birthday: string;
+}
+
+export interface RegisteredUserData {
+  name: string;
+  email: string;
+  passwordHash: string;
+  birthday: string;
+}
+
 interface HuedayState {
   /** yyyy-MM-dd -> o günün kartı */
   cards: Record<string, DayCard>;
@@ -59,6 +72,20 @@ interface HuedayState {
   chats: Record<string, ChatMessage[]>;
   streaks: Record<string, number>;
 
+  // Authentication State
+  user: User | null;
+  registeredUsers: Record<string, RegisteredUserData>;
+
+  // Spotify Auth State
+  spotifyAccessToken: string | null;
+  spotifyRefreshToken: string | null;
+  spotifyTokenExpiresAt: string | null;
+
+  // Authentication Actions
+  signUp: (name: string, email: string, password: string, birthday: string) => Promise<boolean>;
+  login: (email: string, password: string) => Promise<boolean>;
+  logout: () => void;
+
   // Mood Actions
   submitMood: (entry: MoodEntry, location?: LocationCoords) => Promise<DayCard>;
   getCard: (date: string) => DayCard | undefined;
@@ -69,6 +96,10 @@ interface HuedayState {
   clearAllCards: () => void;
   sendMessage: (friend: string, text: string, sender?: 'user' | 'friend') => void;
   incrementStreak: (friend: string) => void;
+
+  // Spotify Actions
+  setSpotifyAuth: (accessToken: string | null, refreshToken: string | null, expiresAt: string | null) => void;
+  clearSpotifyAuth: () => void;
 
   // Morning Ritual Actions
   setDayStoneAndManifest: (
@@ -162,6 +193,11 @@ export const useHuedayStore = create<HuedayState>()(
         'Elif': 2,
         'Merve': 0,
       },
+      user: null,
+      registeredUsers: {},
+      spotifyAccessToken: null,
+      spotifyRefreshToken: null,
+      spotifyTokenExpiresAt: null,
       submitMood: async (entry, location) => {
         const isUserPremium = get().isPremium;
         const profile = get().userProfile;
@@ -207,6 +243,57 @@ export const useHuedayStore = create<HuedayState>()(
               [friend]: current + 1,
             },
           };
+        });
+      },
+      setSpotifyAuth: (accessToken, refreshToken, expiresAt) =>
+        set({
+          spotifyAccessToken: accessToken,
+          spotifyRefreshToken: refreshToken,
+          spotifyTokenExpiresAt: expiresAt,
+        }),
+      clearSpotifyAuth: () =>
+        set({
+          spotifyAccessToken: null,
+          spotifyRefreshToken: null,
+          spotifyTokenExpiresAt: null,
+        }),
+
+      signUp: async (name, email, password, birthday) => {
+        const users = get().registeredUsers;
+        if (users[email]) return false;
+        const newUser = {
+          name,
+          email,
+          passwordHash: password,
+          birthday,
+        };
+        set((state) => ({
+          registeredUsers: { ...state.registeredUsers, [email]: newUser },
+          user: { name, email, birthday },
+          userProfile: { ...state.userProfile, birthday },
+        }));
+        return true;
+      },
+
+      login: async (email, password) => {
+        const users = get().registeredUsers;
+        const matched = users[email];
+        if (matched && matched.passwordHash === password) {
+          set((state) => ({
+            user: { name: matched.name, email: matched.email, birthday: matched.birthday },
+            userProfile: { ...state.userProfile, birthday: matched.birthday },
+          }));
+          return true;
+        }
+        return false;
+      },
+
+      logout: () => {
+        set({
+          user: null,
+          spotifyAccessToken: null,
+          spotifyRefreshToken: null,
+          spotifyTokenExpiresAt: null,
         });
       },
 

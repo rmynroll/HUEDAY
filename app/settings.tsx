@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Pressable, ScrollView, Alert, Switch, Platform, Modal } from 'react-native';
 import { router, Stack } from 'expo-router';
 import { useTranslation } from 'react-i18next';
+import * as Haptics from 'expo-haptics';
 
 import { Text, View } from '@/components/Themed';
 import { useHuedayStore } from '@/lib/storage';
@@ -13,9 +14,17 @@ export default function SettingsScreen() {
   const isPremium = useHuedayStore((s) => s.isPremium);
   const togglePremium = useHuedayStore((s) => s.togglePremium);
   const clearAllCards = useHuedayStore((s) => s.clearAllCards);
+  const user = useHuedayStore((s) => s.user);
+  const logout = useHuedayStore((s) => s.logout);
 
   const [reminderEnabled, setReminderEnabled] = React.useState(true);
   const [showResetConfirm, setShowResetConfirm] = React.useState(false);
+
+  const handleLogout = () => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+    logout();
+    router.replace('/auth');
+  };
 
   const handleLanguageChange = (lng: SupportedLanguage) => {
     setAppLanguage(lng).catch(() => {});
@@ -113,6 +122,23 @@ export default function SettingsScreen() {
             <Text style={styles.dangerText}>{t('settings.resetAllButton')}</Text>
           </Pressable>
         </View>
+
+        {/* User Account / Auth Section */}
+        {user && (
+          <View style={styles.section}>
+            <Text style={styles.sectionHeader}>{t('settings.accountSection', { defaultValue: 'Hesap Bilgileri' })}</Text>
+            <View style={styles.accountCard}>
+              <View style={styles.accountInfo}>
+                <Text style={styles.accountName}>{user.name}</Text>
+                <Text style={styles.accountEmail}>{user.email}</Text>
+                <Text style={styles.accountBday}>🎂 {t('settings.birthday', { defaultValue: 'Doğum Günü' })}: {user.birthday}</Text>
+              </View>
+              <Pressable style={styles.logoutBtn} onPress={handleLogout}>
+                <Text style={styles.logoutText}>Çıkış Yap</Text>
+              </Pressable>
+            </View>
+          </View>
+        )}
 
         {/* About */}
         <View style={styles.aboutContainer}>
@@ -354,5 +380,44 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 14,
     fontWeight: '600',
+  },
+  accountCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 16,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: '#E5E5EA',
+  },
+  accountInfo: {
+    backgroundColor: 'transparent',
+    gap: 4,
+  },
+  accountName: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#1C1C1E',
+  },
+  accountEmail: {
+    fontSize: 12,
+    color: '#636366',
+  },
+  accountBday: {
+    fontSize: 12,
+    color: '#8A8A8E',
+    marginTop: 2,
+  },
+  logoutBtn: {
+    backgroundColor: '#FF3B3015',
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    borderRadius: 12,
+  },
+  logoutText: {
+    color: '#FF3B30',
+    fontSize: 12,
+    fontWeight: '700',
   },
 });

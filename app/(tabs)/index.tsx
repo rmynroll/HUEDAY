@@ -18,6 +18,7 @@ import DayCard from '@/components/DayCard';
 import MultiDimensionMoodSelector, { MoodDimensions } from '@/components/MultiDimensionMoodSelector';
 import WeekStrip from '@/components/WeekStrip';
 import { Text, View } from '@/components/Themed';
+import DrawingTest from '@/src/components/DrawingTest';
 import { scheduleDailyReminder } from '@/lib/notifications';
 import { todayKey, useHuedayStore } from '@/lib/storage';
 import { CARD_STYLES } from '@/lib/cardStyles';
@@ -189,6 +190,11 @@ export default function TodayScreen() {
         <View style={styles.formContainer}>
           {/* Horizontal 7-Day Week Strip */}
           <WeekStrip onSelectDate={(selDate) => router.push(`/card/${selDate}`)} />
+
+          {/* TEMPORARY: drawing test, remove once verified */}
+          <View style={styles.section}>
+            <DrawingTest />
+          </View>
 
           <Text style={styles.heading}>{t('today.heading')}</Text>
           <Text style={styles.subheading}>{t('today.subheading')}</Text>
@@ -386,11 +392,8 @@ const styles = StyleSheet.create({
     width: '75%',
     maxWidth: 260,
     alignSelf: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.1,
-    shadowRadius: 12,
-    elevation: 4,
+    backgroundColor: 'transparent',
+    borderRadius: 24,
   },
   formContainer: {
     paddingHorizontal: 24,

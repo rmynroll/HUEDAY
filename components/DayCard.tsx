@@ -36,46 +36,65 @@ export default function DayCard({ card }: DayCardProps) {
   const paperFibers = useMemo(() => {
     if (!isPaperLike) return [];
     const rng = mulberry32(card.seed + 1234);
-    return Array.from({ length: 32 }).map(() => {
+    return Array.from({ length: 48 }).map(() => {
       const x1 = rng() * VIEWBOX_W;
       const y1 = rng() * VIEWBOX_H;
-      const length = 2.5 + rng() * 7;
+      const length = 3.0 + rng() * 9.0;
       const angle = rng() * Math.PI * 2;
       const x2 = x1 + Math.cos(angle) * length;
       const y2 = y1 + Math.sin(angle) * length;
-      const cx = (x1 + x2) / 2 + (rng() - 0.5) * 3.5;
-      const cy = (y1 + y2) / 2 + (rng() - 0.5) * 3.5;
+      // organic bezier curves
+      const cx = (x1 + x2) / 2 + (rng() - 0.5) * 4.5;
+      const cy = (y1 + y2) / 2 + (rng() - 0.5) * 4.5;
       return {
         d: `M ${x1.toFixed(1)},${y1.toFixed(1)} Q ${cx.toFixed(1)},${cy.toFixed(1)} ${x2.toFixed(1)},${y2.toFixed(1)}`,
-        stroke: rng() > 0.4 ? '#5C4E43' : '#8C7B6C',
-        opacity: 0.07 + rng() * 0.16,
-        strokeWidth: 0.25 + rng() * 0.35,
+        stroke: rng() > 0.4 ? '#4E4237' : '#7D6D5E',
+        opacity: 0.05 + rng() * 0.13,
+        strokeWidth: 0.18 + rng() * 0.25,
       };
     });
   }, [isPaperLike, card.seed]);
 
-  // Generate realistic paper pulp specks & flecks (~160 micro particles)
+  // Generate realistic paper pulp specks & flecks (~180 micro particles)
   const paperPulpSpecks = useMemo(() => {
     if (!isPaperLike) return [];
     const rng = mulberry32(card.seed + 5678);
-    return Array.from({ length: 160 }).map(() => {
+    return Array.from({ length: 180 }).map(() => {
       const type = rng();
-      const isWhiteHighlight = type > 0.6;
-      const isDarkPulp = type > 0.85;
+      const isWhiteHighlight = type > 0.55;
+      const isDarkPulp = type > 0.82;
       return {
         cx: rng() * VIEWBOX_W,
         cy: rng() * VIEWBOX_H,
-        r: 0.2 + rng() * 1.3,
+        r: 0.15 + rng() * 1.1,
         opacity: isWhiteHighlight
-          ? 0.12 + rng() * 0.18
+          ? 0.10 + rng() * 0.15
           : isDarkPulp
-          ? 0.08 + rng() * 0.14
-          : 0.04 + rng() * 0.09,
+          ? 0.07 + rng() * 0.12
+          : 0.03 + rng() * 0.07,
         fill: isWhiteHighlight
           ? '#FFFFFF'
           : isDarkPulp
-          ? '#362A22'
-          : '#7A6B5D',
+          ? '#2E2218'
+          : '#6E5F52',
+      };
+    });
+  }, [isPaperLike, card.seed]);
+
+  // 3D paper tooth texture (micro-embossed bumps)
+  const paperTooth = useMemo(() => {
+    if (!isPaperLike) return [];
+    const rng = mulberry32(card.seed + 9999);
+    return Array.from({ length: 240 }).map(() => {
+      const cx = rng() * VIEWBOX_W;
+      const cy = rng() * VIEWBOX_H;
+      const r = 0.15 + rng() * 0.25;
+      return {
+        cx,
+        cy,
+        r,
+        shadowOpacity: 0.03 + rng() * 0.04,
+        highlightOpacity: 0.12 + rng() * 0.14,
       };
     });
   }, [isPaperLike, card.seed]);
@@ -84,13 +103,57 @@ export default function DayCard({ card }: DayCardProps) {
   const watercolorBlobs = useMemo(() => {
     if (!isWatercolor) return [];
     const rng = mulberry32(card.seed);
-    return card.palette.map((color, index) => ({
-      cx: 15 + rng() * 70,
-      cy: 25 + rng() * 128,
-      r: 38 + rng() * 48,
-      fillId: `wc-grad-${card.date}-${card.seed}-${index}`,
-      opacity: 0.6 + rng() * 0.25,
-    }));
+    return card.palette.map((color, index) => {
+      const cx = 15 + rng() * 70;
+      const cy = 25 + rng() * 128;
+      const r = 32 + rng() * 38;
+      
+      // Generate irregular smooth path
+      const points = 12;
+      const coords: {x: number; y: number}[] = [];
+      for (let i = 0; i < points; i++) {
+        const angle = (i / points) * Math.PI * 2;
+        // Natural bleeding variation
+        const rNoise = r * (0.8 + rng() * 0.35 + Math.sin(angle * 3) * 0.12);
+        coords.push({
+          x: cx + Math.cos(angle) * rNoise,
+          y: cy + Math.sin(angle) * rNoise
+        });
+      }
+      
+      let d = `M ${coords[0].x.toFixed(1)},${coords[0].y.toFixed(1)}`;
+      for (let i = 0; i < points; i++) {
+        const p0 = coords[i];
+        const p1 = coords[(i + 1) % points];
+        const xc = (p0.x + p1.x) / 2;
+        const yc = (p0.y + p1.y) / 2;
+        d += ` Q ${p0.x.toFixed(1)},${p0.y.toFixed(1)} ${xc.toFixed(1)},${yc.toFixed(1)}`;
+      }
+      d += ' Z';
+
+      // Splatters around this blob
+      const splatters = Array.from({ length: 5 }).map(() => {
+        const dist = r * (1.1 + rng() * 0.55);
+        const ang = rng() * Math.PI * 2;
+        return {
+          cx: cx + Math.cos(ang) * dist,
+          cy: cy + Math.sin(ang) * dist,
+          r: 0.25 + rng() * 0.95,
+          opacity: 0.25 + rng() * 0.35
+        };
+      });
+
+      return {
+        d,
+        color,
+        cx,
+        cy,
+        r,
+        splatters,
+        fillId: `wc-grad-${card.date}-${card.seed}-${index}`,
+        opacity: 0.55 + rng() * 0.2,
+      };
+    });
   }, [isWatercolor, card.palette, card.seed]);
 
   // Pastel Color Washes for Paper-Texture (grain mode)
@@ -102,7 +165,7 @@ export default function DayCard({ card }: DayCardProps) {
       cy: 15 + rng() * 148,
       r: 45 + rng() * 55,
       fillId: `paper-wash-${card.date}-${card.seed}-${index}`,
-      opacity: 0.45 + rng() * 0.2,
+      opacity: 0.4 + rng() * 0.15,
     }));
   }, [style.textureKind, card.palette, card.seed]);
 
@@ -114,9 +177,38 @@ export default function DayCard({ card }: DayCardProps) {
       cy: 20 + rng() * 130,
       r: 45 + rng() * 40,
       fillId: `neon-grad-${card.date}-${card.seed}-${index}`,
-      opacity: 0.5 + rng() * 0.2,
+      opacity: 0.45 + rng() * 0.18,
     }));
   }, [isNeon, card.palette, card.seed]);
+
+  // Retro Neon Grid
+  const neonGrid = useMemo(() => {
+    if (!isNeon) return null;
+    let paths = '';
+    // Radiating vertical perspective lines from (50, -20)
+    for (let x = -30; x <= 130; x += 16) {
+      paths += ` M 50,-10 L ${x},178`;
+    }
+    // Horizontal grid lines that compress near top horizon
+    for (let i = 0; i <= 10; i++) {
+      const y = 30 + Math.pow(i / 10, 1.8) * 148;
+      paths += ` M 0,${y.toFixed(1)} L 100,${y.toFixed(1)}`;
+    }
+    return paths;
+  }, [isNeon]);
+
+  // Specular cross flares for chrome metallic surface
+  const chromeFlares = useMemo(() => {
+    if (style.textureKind !== 'chrome') return [];
+    const rng = mulberry32(card.seed + 777);
+    return Array.from({ length: 4 }).map(() => ({
+      cx: 10 + rng() * 80,
+      cy: 25 + rng() * 128,
+      r: 1.5 + rng() * 2,
+      opacity: 0.65 + rng() * 0.35,
+    }));
+  }, [style.textureKind, card.seed]);
+
 
   // Dynamic Typography Styles based on selected CardStyle
   const logoFont = useMemo(() => {
@@ -164,14 +256,14 @@ export default function DayCard({ card }: DayCardProps) {
   return (
     <View style={styles.wrapper}>
       {/* ---- Background Layer ---- */}
-      <View style={[StyleSheet.absoluteFill, backgroundStyle]} />
+      <View style={[StyleSheet.absoluteFill, backgroundStyle, { borderRadius: 24 }]} />
 
       {/* ---- SVG Overlay Layer ---- */}
       <Svg
         width="100%"
         height="100%"
         viewBox={`0 0 ${VIEWBOX_W} ${VIEWBOX_H}`}
-        style={StyleSheet.absoluteFill}
+        style={[StyleSheet.absoluteFill, { borderRadius: 24 }]}
         pointerEvents="none"
       >
         <Defs>
@@ -299,18 +391,40 @@ export default function DayCard({ card }: DayCardProps) {
             />
           ))}
 
-        {/* Watercolor Blobs */}
-        {isWatercolor &&
-          watercolorBlobs.map((blob, i) => (
-            <Circle
-              key={i}
-              cx={blob.cx}
-              cy={blob.cy}
-              r={blob.r}
-              fill={`url(#${blob.fillId})`}
-              opacity={blob.opacity}
-            />
-          ))}
+        {/* Watercolor Blobs (Organic stains with bleeding edges and splatters) */}
+        {isWatercolor && (
+          <>
+            {watercolorBlobs.map((blob, i) => (
+              <React.Fragment key={`wc-blob-group-${i}`}>
+                {/* Main bled wash */}
+                <Path
+                  d={blob.d}
+                  fill={`url(#${blob.fillId})`}
+                  opacity={blob.opacity}
+                />
+                {/* Drying edge/fringe line (classic watercolor accent) */}
+                <Path
+                  d={blob.d}
+                  fill="none"
+                  stroke={blob.color}
+                  strokeWidth={0.45}
+                  opacity={blob.opacity * 0.7}
+                />
+                {/* Ambient splatters */}
+                {blob.splatters.map((s, idx) => (
+                  <Circle
+                    key={`splatter-${idx}`}
+                    cx={s.cx}
+                    cy={s.cy}
+                    r={s.r}
+                    fill={blob.color}
+                    opacity={s.opacity}
+                  />
+                ))}
+              </React.Fragment>
+            ))}
+          </>
+        )}
 
         {/* Chrome metallic liquid paths */}
         {style.textureKind === 'chrome' && (
@@ -325,12 +439,40 @@ export default function DayCard({ card }: DayCardProps) {
               fill={`url(#chrome-grad-2-${card.seed})`}
               opacity={0.65}
             />
+            {/* Glossy specular cross flares */}
+            {chromeFlares.map((flare, i) => (
+              <React.Fragment key={`flare-${i}`}>
+                <Circle cx={flare.cx} cy={flare.cy} r={flare.r} fill="#FFFFFF" opacity={flare.opacity} />
+                <Path
+                  d={`M ${flare.cx},${flare.cy - flare.r * 3.5} L ${flare.cx},${flare.cy + flare.r * 3.5}`}
+                  stroke="#FFFFFF"
+                  strokeWidth={0.25}
+                  opacity={flare.opacity * 0.75}
+                />
+                <Path
+                  d={`M ${flare.cx - flare.r * 3.5},${flare.cy} L ${flare.cx + flare.r * 3.5},${flare.cy}`}
+                  stroke="#FFFFFF"
+                  strokeWidth={0.25}
+                  opacity={flare.opacity * 0.75}
+                />
+              </React.Fragment>
+            ))}
           </>
         )}
 
-        {/* Neon Glow Blobs */}
+        {/* Neon Glow Blobs & Scanlines/Grid */}
         {isNeon && (
           <>
+            {/* Retro perspective grid */}
+            {neonGrid && (
+              <Path
+                d={neonGrid}
+                fill="none"
+                stroke={card.palette[1] || card.palette[0]}
+                strokeWidth={0.25}
+                opacity={0.2}
+              />
+            )}
             {neonBlobs.map((blob, i) => (
               <Circle
                 key={i}
@@ -354,6 +496,15 @@ export default function DayCard({ card }: DayCardProps) {
           </>
         )}
 
+        {/* Paper Tooth Texture (White highlights & brown shadows) */}
+        {isPaperLike &&
+          paperTooth.map((t, i) => (
+            <React.Fragment key={`tooth-${i}`}>
+              <Circle cx={t.cx} cy={t.cy} r={t.r} fill="#FFFFFF" opacity={t.highlightOpacity} />
+              <Circle cx={t.cx + 0.12} cy={t.cy + 0.12} r={t.r} fill="#2E2218" opacity={t.shadowOpacity} />
+            </React.Fragment>
+          ))}
+
         {/* Paper Pulp Specks & Flecks */}
         {isPaperLike &&
           paperPulpSpecks.map((p, i) => (
@@ -373,20 +524,36 @@ export default function DayCard({ card }: DayCardProps) {
             />
           ))}
 
-        {/* Debossed Fine-Art Card Border Frame for Paper */}
+        {/* Debossed Fine-Art Card Pressed Double Borders for Paper */}
         {isPaperLike && (
-          <Rect
-            x={4}
-            y={4}
-            width={VIEWBOX_W - 8}
-            height={VIEWBOX_H - 8}
-            rx={8}
-            ry={8}
-            fill="none"
-            stroke="#8A7768"
-            strokeWidth={0.35}
-            opacity={0.25}
-          />
+          <>
+            {/* Outer debossed border */}
+            <Rect
+              x={4}
+              y={4}
+              width={VIEWBOX_W - 8}
+              height={VIEWBOX_H - 8}
+              rx={8}
+              ry={8}
+              fill="none"
+              stroke="#8A7768"
+              strokeWidth={0.3}
+              opacity={0.18}
+            />
+            {/* Inner embossed white border */}
+            <Rect
+              x={5.2}
+              y={5.2}
+              width={VIEWBOX_W - 10.4}
+              height={VIEWBOX_H - 10.4}
+              rx={7}
+              ry={7}
+              fill="none"
+              stroke="#FFFFFF"
+              strokeWidth={0.3}
+              opacity={0.35}
+            />
+          </>
         )}
       </Svg>
 

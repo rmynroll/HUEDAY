@@ -51,7 +51,7 @@ export default function WaxSealSvg({
       </Svg>
 
       {/* Center Motif / Initial */}
-      <View style={StyleSheet.absoluteFillObject}>
+      <View style={StyleSheet.absoluteFill}>
         <View style={styles.centerBox}>
           <Text style={[styles.motifText, { fontSize: size * 0.36 }]}>
             {getMotifSymbol()}

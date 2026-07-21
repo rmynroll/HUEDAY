@@ -1,7 +1,7 @@
-import { getMeteorEvents, getMoonEvents, getSeasonalEvents } from './astronomy';
-import i18n from './i18n';
 import type { DayCard } from '../types/card';
 import type { SpecialEvent, UserProfile } from '../types/specialEvents';
+import { getMeteorEvents, getMoonEvents, getSeasonalEvents } from './astronomy';
+import i18n from './i18n';
 import { checkFirstSnowEvent, LocationCoords } from './weather';
 
 /**

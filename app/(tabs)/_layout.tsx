@@ -65,10 +65,10 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="chats"
+        name="wellness"
         options={{
-          title: t('nav.chats'),
-          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>💬</Text>,
+          title: t('nav.wellness', 'Duygu Rehberi'),
+          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🧘</Text>,
         }}
       />
     </Tabs>

@@ -144,18 +144,18 @@ const styles = StyleSheet.create({
     borderColor: '#1C1C1E',
   },
   emptyRing: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     borderRadius: CIRCLE_SIZE / 2,
     borderWidth: 1.5,
     borderColor: 'rgba(138,138,142,0.35)',
     borderStyle: 'dashed',
   },
   filledCircle: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     borderRadius: CIRCLE_SIZE / 2,
   },
   splitCircle: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     flexDirection: 'row',
   },
   halfCell: {

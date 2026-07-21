@@ -15,6 +15,7 @@ import CrystalSelectorDrawer from '@/components/CrystalSelectorDrawer';
 import DayCard from '@/components/DayCard';
 import PolaroidFilmstrip from '@/components/PolaroidFilmstrip';
 import SealingRitualModal from '@/components/SealingRitualModal';
+import MoodMusic from '@/components/MoodMusic';
 import { Text, View } from '@/components/Themed';
 import { getCrystalById } from '@/constants/crystals';
 import { getDateFnsLocale } from '@/lib/i18n';
@@ -244,6 +245,9 @@ export default function CardScreen() {
               <Text style={styles.secondaryButtonText}>{t('card.capsuleButton')}</Text>
             </Pressable>
           </View>
+
+          {/* Mood-Music Integration */}
+          <MoodMusic card={card} />
 
           {/* RITUAL 1: SABAH (Taş & Niyet) */}
           {card?.stoneId ? (
@@ -678,6 +682,8 @@ const styles = StyleSheet.create({
   },
   cardWrapper: {
     width: '100%',
+    backgroundColor: 'transparent',
+    borderRadius: 24,
   },
   actionsContainer: {
     gap: 12,
